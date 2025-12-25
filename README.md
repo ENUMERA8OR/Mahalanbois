@@ -57,12 +57,13 @@ python mahalanbois7.6V.py --query "category-agnostic novelty detection"
 
 ---
 
-## 📈 Roadmap & History
+## 🚀 Future Directions: The OOD-38 Diagnostic Suite
 
-*   **V1-V3:** Initial experimentation with Mahalanobis distance in latent vector spaces.
-*   **V4-V5:** Implementation of LanceDB for persistent historical benchmarking.
-*   **V7.5:** Exploration of SLM-based atomic fact filtering (NovAScore).
-*   **V7.6:** Optimization into a fully deterministic topological pipeline for high-throughput production environments.
+The next evolution of Mahalanbois involves transitioning from a novelty filter to a comprehensive **OOD Diagnostic Suite**.
+
+*   **Metric Unification:** Integration of the 38 community-validated OOD metrics (Energy-based, ReAct, VIM, DICE, etc.) to create a high-dimensional "Anomalous Signature."
+*   **Neural Orchestration:** Utilizing an **SLM (Small Language Model)** like Qwen3-0.6b as a "Neural Fuser." Instead of simple weighting, the SLM will interpret the 38-dimensional signature to provide qualitative diagnostic explanations of *why* a piece of research is novel.
+*   **Real-time Manifold Monitoring:** Moving toward live-streaming ArXiv integration with automated discovery alerts for high-entropy research signals.
 
 ---
 
