@@ -1,0 +1,1319 @@
+[
+  {
+    "title": "Active Intelligence in Video Avatars via Closed-loop World Modeling",
+    "summary": "Current video avatar generation methods excel at identity preservation and motion alignment but lack genuine agency, they cannot autonomously pursue long-term goals through adaptive environmental interaction. We address this by introducing L-IVA (Long-horizon Interactive Visual Avatar), a task and benchmark for evaluating goal-directed planning in stochastic generative environments, and ORCA (Online Reasoning and Cognitive Architecture), the first framework enabling active intelligence in video avatars. ORCA embodies Internal World Model (IWM) capabilities through two key innovations: (1) a closed-loop OTAR cycle (Observe-Think-Act-Reflect) that maintains robust state tracking under generative uncertainty by continuously verifying predicted outcomes against actual generations, and (2) a hierarchical dual-system architecture where System 2 performs strategic reasoning with state prediction while System 1 translates abstract plans into precise, model-specific action captions. By formulating avatar control as a POMDP and implementing continuous belief updating with outcome verification, ORCA enables autonomous multi-step task completion in open-domain scenarios. Extensive experiments demonstrate that ORCA significantly outperforms open-loop and non-reflective baselines in task success rate and behavioral coherence, validating our IWM-inspired design for advancing video avatar intelligence from passive animation to active, goal-oriented behavior.",
+    "url": "http://arxiv.org/abs/2512.20615v1",
+    "date": "2025-12-23T18:59:16+00:00",
+    "authors": [
+      "Xuanhua He",
+      "Tianyu Yang",
+      "Ke Cao",
+      "Ruiqi Wu",
+      "Cheng Meng",
+      "Yong Zhang",
+      "Zhuoliang Kang",
+      "Xiaoming Wei",
+      "Qifeng Chen"
+    ]
+  },
+  {
+    "title": "Saddle-to-Saddle Dynamics Explains A Simplicity Bias Across Neural Network Architectures",
+    "summary": "Neural networks trained with gradient descent often learn solutions of increasing complexity over time, a phenomenon known as simplicity bias. Despite being widely observed across architectures, existing theoretical treatments lack a unifying framework. We present a theoretical framework that explains a simplicity bias arising from saddle-to-saddle learning dynamics for a general class of neural networks, incorporating fully-connected, convolutional, and attention-based architectures. Here, simple means expressible with few hidden units, i.e., hidden neurons, convolutional kernels, or attention heads. Specifically, we show that linear networks learn solutions of increasing rank, ReLU networks learn solutions with an increasing number of kinks, convolutional networks learn solutions with an increasing number of convolutional kernels, and self-attention models learn solutions with an increasing number of attention heads. By analyzing fixed points, invariant manifolds, and dynamics of gradient descent learning, we show that saddle-to-saddle dynamics operates by iteratively evolving near an invariant manifold, approaching a saddle, and switching to another invariant manifold. Our analysis also illuminates the effects of data distribution and weight initialization on the duration and number of plateaus in learning, dissociating previously confounding factors. Overall, our theory offers a framework for understanding when and why gradient descent progressively learns increasingly complex solutions.",
+    "url": "http://arxiv.org/abs/2512.20607v1",
+    "date": "2025-12-23T18:55:30+00:00",
+    "authors": [
+      "Yedi Zhang",
+      "Andrew Saxe",
+      "Peter E. Latham"
+    ]
+  },
+  {
+    "title": "Repurposing Video Diffusion Transformers for Robust Point Tracking",
+    "summary": "Point tracking aims to localize corresponding points across video frames, serving as a fundamental task for 4D reconstruction, robotics, and video editing. Existing methods commonly rely on shallow convolutional backbones such as ResNet that process frames independently, lacking temporal coherence and producing unreliable matching costs under challenging conditions. Through systematic analysis, we find that video Diffusion Transformers (DiTs), pre-trained on large-scale real-world videos with spatio-temporal attention, inherently exhibit strong point tracking capability and robustly handle dynamic motions and frequent occlusions. We propose DiTracker, which adapts video DiTs through: (1) query-key attention matching, (2) lightweight LoRA tuning, and (3) cost fusion with a ResNet backbone. Despite training with 8 times smaller batch size, DiTracker achieves state-of-the-art performance on challenging ITTO benchmark and matches or outperforms state-of-the-art models on TAP-Vid benchmarks. Our work validates video DiT features as an effective and efficient foundation for point tracking.",
+    "url": "http://arxiv.org/abs/2512.20606v1",
+    "date": "2025-12-23T18:54:10+00:00",
+    "authors": [
+      "Soowon Son",
+      "Honggyu An",
+      "Chaehyun Kim",
+      "Hyunah Ko",
+      "Jisu Nam",
+      "Dahyun Chung",
+      "Siyoon Jin",
+      "Jung Yi",
+      "Jaewon Min",
+      "Junhwa Hur",
+      "Seungryong Kim"
+    ]
+  },
+  {
+    "title": "MoE-DiffuSeq: Enhancing Long-Document Diffusion Models with Sparse Attention and Mixture of Experts",
+    "summary": "We present MoE-DiffuSeq, a mixture of experts based framework for enhancing diffusion models in long document generation. Existing diffusion based text generation models, such as DiffuSeq, suffer from high computational cost and memory overhead when applied to extended sequences. To address these challenges, MoE-DiffuSeq integrates sparse attention with a mixture of experts architecture, enabling efficient and scalable long sequence modeling. Our approach introduces a customized sparse attention mechanism designed to reduce computational complexity while preserving text quality and coherence. In addition, we incorporate a soft absorbing state within the diffusion process to accelerate sequence reconstruction and improve generation precision. Extensive experiments demonstrate that MoE-DiffuSeq significantly improves training efficiency and sampling speed compared to existing diffusion models. These advantages are particularly effective for long document scenarios, including scientific article generation, code repository modeling, and long form dialogue generation. Benchmark results further show that MoE-DiffuSeq improves efficiency, speed, accuracy, and expressiveness, advancing the practical applicability of diffusion models for high quality long form text generation.",
+    "url": "http://arxiv.org/abs/2512.20604v1",
+    "date": "2025-12-23T18:50:54+00:00",
+    "authors": [
+      "Alexandros Christoforos",
+      "Chadbourne Davis"
+    ]
+  },
+  {
+    "title": "Random Stinespring superchannel: converting channel queries into dilation isometry queries",
+    "summary": "The recently introduced random purification channel, which converts $n$ copies of an arbitrary mixed quantum state into $n$ copies of the same uniformly random purification, has emerged as a powerful tool in quantum information theory. Motivated by this development, we introduce a channel-level analogue, which we call the random Stinespring superchannel. This consists in a procedure to transform $n$ parallel queries of an arbitrary quantum channel into $n$ parallel queries of the same uniformly random Stinespring isometry, via universal encoding and decoding operations that are efficiently implementable. When the channel is promised to have Choi rank at most $r$, the procedure can be tailored to yield a Stinespring environment of dimension $r$. As a consequence, quantum channel learning reduces to isometry learning, yielding a simple channel learning algorithm, based on existing isometry learning protocols, that matches the performance of the two recently proposed channel tomography algorithms. Complementarily, whereas the optimality of these algorithms had previously been established only up to a logarithmic factor in the dimension, we close this gap by removing this logarithmic factor from the lower bound. Taken together, our results fully establish the optimality of these recently introduced channel learning algorithms, showing that the optimal query complexity of learning a quantum channel with input dimension $d_A$, output dimension $d_B$, and Choi rank $r$ is $\u0398(d_A d_B r)$.",
+    "url": "http://arxiv.org/abs/2512.20599v1",
+    "date": "2025-12-23T18:46:07+00:00",
+    "authors": [
+      "Filippo Girardi",
+      "Francesco Anna Mele",
+      "Haimeng Zhao",
+      "Marco Fanizza",
+      "Ludovico Lami"
+    ]
+  },
+  {
+    "title": "On the near-tightness of $\u03c7\\leq 2r$: a general $\u03c3$-ary construction and a binary case via LFSRs",
+    "summary": "In the field of compressed string indexes, recent work has introduced suffixient sets and their corresponding repetitiveness measure $\u03c7$. In particular, researchers have explored its relationship to other repetitiveness measures, notably $r$, the number of runs in the Burrows--Wheeler Transform (BWT) of a string. Navarro et al. (2025) proved that $\u03c7\\leq 2r$, although empirical results by Cenzato et al. (2024) suggest that this bound is loose, with real data bounding $\u03c7$ by around $1.13r$ to $1.33r$ when the size of the alphabet is $\u03c3= 4$. To better understand this gap, we present two cases for the asymptotic tightness of the $\u03c7\\leq 2r$ bound: a general construction for arbitrary $\u03c3$ values, and a binary alphabet case, consisting of de Bruijn sequences constructed by linear-feedback shift registers (LFSRs) from primitive polynomials over $\\mathbb{F}_2$. The second is a novel characterization of which de Bruijn sequences achieve the literature run-minimal pattern for the cyclic BWT. Moreover, we show that de Bruijn sequences fail to close the gap for $\u03c3\\geq 3$.",
+    "url": "http://arxiv.org/abs/2512.20598v1",
+    "date": "2025-12-23T18:44:29+00:00",
+    "authors": [
+      "Vinicius T. V. Date",
+      "Leandro M. Zatesko"
+    ]
+  },
+  {
+    "title": "Leveraging High-Fidelity Digital Models and Reinforcement Learning for Mission Engineering: A Case Study of Aerial Firefighting Under Perfect Information",
+    "summary": "As systems engineering (SE) objectives evolve from design and operation of monolithic systems to complex System of Systems (SoS), the discipline of Mission Engineering (ME) has emerged which is increasingly being accepted as a new line of thinking for the SE community. Moreover, mission environments are uncertain, dynamic, and mission outcomes are a direct function of how the mission assets will interact with this environment. This proves static architectures brittle and calls for analytically rigorous approaches for ME. To that end, this paper proposes an intelligent mission coordination methodology that integrates digital mission models with Reinforcement Learning (RL), that specifically addresses the need for adaptive task allocation and reconfiguration. More specifically, we are leveraging a Digital Engineering (DE) based infrastructure that is composed of a high-fidelity digital mission model and agent-based simulation; and then we formulate the mission tactics management problem as a Markov Decision Process (MDP), and employ an RL agent trained via Proximal Policy Optimization. By leveraging the simulation as a sandbox, we map the system states to actions, refining the policy based on realized mission outcomes. The utility of the RL-based intelligent mission coordinator is demonstrated through an aerial firefighting case study. Our findings indicate that the RL-based intelligent mission coordinator not only surpasses baseline performance but also significantly reduces the variability in mission performance. Thus, this study serves as a proof of concept demonstrating that DE-enabled mission simulations combined with advanced analytical tools offer a mission-agnostic framework for improving ME practice; which can be extended to more complicated fleet design and selection problems in the future from a mission-first perspective.",
+    "url": "http://arxiv.org/abs/2512.20589v1",
+    "date": "2025-12-23T18:36:07+00:00",
+    "authors": [
+      "\u0130brahim O\u011fuz \u00c7etinkaya",
+      "Sajad Khodadadian",
+      "Taylan G. Top\u00e7u"
+    ]
+  },
+  {
+    "title": "A human-centered approach to reframing job satisfaction in the BIM-enabled construction industry",
+    "summary": "As the construction industry undergoes rapid digital transformation, ensuring that new technologies enhance rather than hinder human experience has become essential. The inclusion of Building Information Modeling (BIM) plays a central role in this shift, yet its influence on job satisfaction remains underexplored. In response, this study developed a human-centered measurement model for evaluating job satisfaction in BIM work environments by adapting Hackman and Oldham's Job Characteristics Model for the architecture, engineering, and construction (AEC) industry to create a survey that captured industry perspectives on BIM use and job satisfaction. The model uses Partial Least Squares Structural Equation Modeling to analyze the survey results and identify what dimensions of BIM-related work affect job satisfaction. While it was hypothesized that BIM use increases job satisfaction, the results show that only some dimensions of BIM use positively impact BIM job satisfaction; the use of BIM does not guarantee an increase in overall job satisfaction. Additionally, more frequent BIM use was not associated with higher satisfaction levels. These findings suggest that in the AEC industry, sustainable job satisfaction depends less on technological autonomy and more on human-centric factors, particularly collaboration and meaningful engagement within digital workflows.",
+    "url": "http://arxiv.org/abs/2512.20584v1",
+    "date": "2025-12-23T18:29:51+00:00",
+    "authors": [
+      "Sharareh Mirzaei",
+      "Stephanie Bunt",
+      "Susan M Bogus"
+    ]
+  },
+  {
+    "title": "Programmable Optical Spectrum Shapers as Computing Primitives for Accelerating Convolutional Neural Networks",
+    "summary": "Photonic convolutional accelerators have emerged as low-energy alternatives to power-demanding digital convolutional neural networks, though they often face limitations in scalability. In this work, we introduce a convolutional photonic accelerator that employs programmable kernels manifesting as trainable waveforms in the frequency domain to enable low-energy, high-throughput scalable image classification. The proposed scheme inherently provides dimensionality reduction and feature extraction directly in the optical domain. Numerical results targeting the Fashion-MNIST show that by using only 16 optical nodes, the system's classification accuracy tops at 90.1% when typical backpropagation is used. Moreover, by adapting the training technique to the forward-forward approach, a marginal drop of 1% is recorded compared to the backpropagation scenario, thus showcasing the compatibility of the overall architecture with a hardware-friendly training approach. Finally, we experimentally implement the trained kernels using a programmable waveshaper. Despite the difference between the simulated and experimentally generated transfer functions of the programmable kernels, the classification accuracy based on the experimentally obtained kernels exhibits a marginal 0.2% reduction, proving the validity of the idea and its high robustness to variations of the frequency-applied complex weights.",
+    "url": "http://arxiv.org/abs/2512.20580v1",
+    "date": "2025-12-23T18:26:51+00:00",
+    "authors": [
+      "Georgios Moustakas",
+      "Adonis Bogris",
+      "Charis Mesaritakis"
+    ]
+  },
+  {
+    "title": "Composing Mini Oscilloscope on Embedded Systems",
+    "summary": "In this paper, our goal is to reproduce the basic functionalities of a regular oscilloscope, using the Nuvoton NUC-140 embedded systems development platform as the front-end and display method. A custom-built daughter board connects the NUC-140 to a variety of peripherals, including two BNC scope-probe connections, an external nine-button keypad, and a calibration signal. The LCD of the NUC-140 development board serves as the waveform display. From the experimental results, it is demonstrated that our proposed system became a very competent debugging tool. It implements 90% of the features we typically use on original oscilloscopes, including: automatic, edge-triggered, and single modes; waveform visualization using vertical and horizontal scaling; probe calibration.",
+    "url": "http://arxiv.org/abs/2512.20571v1",
+    "date": "2025-12-23T18:16:24+00:00",
+    "authors": [
+      "Brennan Romero",
+      "D. G. Perera"
+    ]
+  },
+  {
+    "title": "Distilling to Hybrid Attention Models via KL-Guided Layer Selection",
+    "summary": "Distilling pretrained softmax attention Transformers into more efficient hybrid architectures that interleave softmax and linear attention layers is a promising approach for improving the inference efficiency of LLMs without requiring expensive pretraining from scratch. A critical factor in the conversion process is layer selection, i.e., deciding on which layers to convert to linear attention variants. This paper describes a simple and efficient recipe for layer selection that uses layer importance scores derived from a small amount of training on generic text data. Once the layers have been selected we use a recent pipeline for the distillation process itself \\citep[RADLADS;][]{goldstein2025radlads}, which consists of attention weight transfer, hidden state alignment, KL-based distribution matching, followed by a small amount of finetuning. We find that this approach is more effective than existing approaches for layer selection, including heuristics that uniformly interleave linear attentions based on a fixed ratio, as well as more involved approaches that rely on specialized diagnostic datasets.",
+    "url": "http://arxiv.org/abs/2512.20569v1",
+    "date": "2025-12-23T18:12:22+00:00",
+    "authors": [
+      "Yanhong Li",
+      "Songlin Yang",
+      "Shawn Tan",
+      "Mayank Mishra",
+      "Rameswar Panda",
+      "Jiawei Zhou",
+      "Yoon Kim"
+    ]
+  },
+  {
+    "title": "Learning to Reason in 4D: Dynamic Spatial Understanding for Vision Language Models",
+    "summary": "Vision-language models (VLM) excel at general understanding yet remain weak at dynamic spatial reasoning (DSR), i.e., reasoning about the evolvement of object geometry and relationship in 3D space over time, largely due to the scarcity of scalable 4D-aware training resources. To bridge this gap across aspects of dataset, benchmark and model, we introduce DSR Suite. First, we propose an automated pipeline that generates multiple-choice question-answer pairs from in-the-wild videos for DSR. By leveraging modern vision foundation models, the pipeline extracts rich geometric and motion information, including camera poses, local point clouds, object masks, orientations, and 3D trajectories. These geometric cues enable the construction of DSR-Train for learning and further human-refined DSR-Bench for evaluation. Compared with previous works, our data emphasize (i) in-the-wild video sources, (ii) object- and scene-level 3D requirements, (iii) viewpoint transformations, (iv) multi-object interactions, and (v) fine-grained, procedural answers. Beyond data, we propose a lightweight Geometry Selection Module (GSM) to seamlessly integrate geometric priors into VLMs, which condenses question semantics and extracts question-relevant knowledge from pretrained 4D reconstruction priors into a compact set of geometry tokens. This targeted extraction avoids overwhelming the model with irrelevant knowledge. Experiments show that integrating DSR-Train and GSM into Qwen2.5-VL-7B significantly enhances its dynamic spatial reasoning capability, while maintaining accuracy on general video understanding benchmarks.",
+    "url": "http://arxiv.org/abs/2512.20557v1",
+    "date": "2025-12-23T17:56:36+00:00",
+    "authors": [
+      "Shengchao Zhou",
+      "Yuxin Chen",
+      "Yuying Ge",
+      "Wei Huang",
+      "Jiehong Lin",
+      "Ying Shan",
+      "Xiaojuan Qi"
+    ]
+  },
+  {
+    "title": "Hardware-aware and Resource-efficient Circuit Packing and Scheduling on Trapped-Ion Quantum Computers",
+    "summary": "The rapid expansion of quantum cloud services has led to long job queues due to single-tenant execution models that underutilize hardware resources. Quantum multi-programming (QMP) mitigates this by executing multiple circuits in parallel on a single device, but existing methods target superconducting systems with limited connectivity, high crosstalk, and lower gate fidelity. Trapped-ion architectures, with all-to-all connectivity, long coherence times, and high-fidelity mid-circuit measurement properties, presents itself as a more suitable platform for scalable QMP. We present CircPack, a hardware-aware circuit packing framework designed for modular trapped-ion devices based on the Quantum Charge-Coupled Device (QCCD) architecture. CircPack formulates static circuit scheduling as a two-dimensional packing problem with hardware-specific shuttling constraints. Compared to superconducting-based QMP approaches, CircPack achieves up to 70.72% better fidelity, 62.67% higher utilization, and 32.80% improved layer reduction. This framework is also capable of scalable, balanced scheduling across a cluster of independent QCCD modules, highlighting trapped-ion systems' potential in improving the throughput of quantum cloud computing in the near future.",
+    "url": "http://arxiv.org/abs/2512.20554v1",
+    "date": "2025-12-23T17:53:47+00:00",
+    "authors": [
+      "Miguel Palma",
+      "Shuwen Kan",
+      "Wenqi Wei",
+      "Juntao Chen",
+      "Kaixun Hua",
+      "Sara Mouradian",
+      "Ying Mao"
+    ]
+  },
+  {
+    "title": "Benchmarking LLMs for Predictive Applications in the Intensive Care Units",
+    "summary": "With the advent of LLMs, various tasks across the natural language processing domain have been transformed. However, their application in predictive tasks remains less researched. This study compares large language models, including GatorTron-Base (trained on clinical data), Llama 8B, and Mistral 7B, against models like BioBERT, DocBERT, BioClinicalBERT, Word2Vec, and Doc2Vec, setting benchmarks for predicting Shock in critically ill patients. Timely prediction of shock can enable early interventions, thus improving patient outcomes. Text data from 17,294 ICU stays of patients in the MIMIC III database were scored for length of stay > 24 hours and shock index (SI) > 0.7 to yield 355 and 87 patients with normal and abnormal SI-index, respectively. Both focal and cross-entropy losses were used during finetuning to address class imbalances. Our findings indicate that while GatorTron Base achieved the highest weighted recall of 80.5%, the overall performance metrics were comparable between SLMs and LLMs. This suggests that LLMs are not inherently superior to SLMs in predicting future clinical events despite their strong performance on text-based tasks. To achieve meaningful clinical outcomes, future efforts in training LLMs should prioritize developing models capable of predicting clinical trajectories rather than focusing on simpler tasks such as named entity recognition or phenotyping.",
+    "url": "http://arxiv.org/abs/2512.20520v1",
+    "date": "2025-12-23T17:08:31+00:00",
+    "authors": [
+      "Chehak Malhotra",
+      "Mehak Gopal",
+      "Akshaya Devadiga",
+      "Pradeep Singh",
+      "Ridam Pal",
+      "Ritwik Kashyap",
+      "Tavpritesh Sethi"
+    ]
+  },
+  {
+    "title": "Explainable time-series forecasting with sampling-free SHAP for Transformers",
+    "summary": "Time-series forecasts are essential for planning and decision-making in many domains. Explainability is key to building user trust and meeting transparency requirements. Shapley Additive Explanations (SHAP) is a popular explainable AI framework, but it lacks efficient implementations for time series and often assumes feature independence when sampling counterfactuals. We introduce SHAPformer, an accurate, fast and sampling-free explainable time-series forecasting model based on the Transformer architecture. It leverages attention manipulation to make predictions based on feature subsets. SHAPformer generates explanations in under one second, several orders of magnitude faster than the SHAP Permutation Explainer. On synthetic data with ground truth explanations, SHAPformer provides explanations that are true to the data. Applied to real-world electrical load data, it achieves competitive predictive performance and delivers meaningful local and global insights, such as identifying the past load as the key predictor and revealing a distinct model behavior during the Christmas period.",
+    "url": "http://arxiv.org/abs/2512.20514v1",
+    "date": "2025-12-23T17:02:35+00:00",
+    "authors": [
+      "Matthias Hertel",
+      "Sebastian P\u00fctz",
+      "Ralf Mikut",
+      "Veit Hagenmeyer",
+      "Benjamin Sch\u00e4fer"
+    ]
+  },
+  {
+    "title": "Ultrasonic metamaterial at MHz frequencies using microstructured glass",
+    "summary": "Acoustic metamaterials enhance traditional material properties through microstructure engineering, providing new opportunities to shape sound fields in applications ranging from biomedical imaging, clinical therapy to non-destructive testing. However, at the MHz frequency ranges, only a few metamaterial architectures exist. They are often highly attenuating or difficult to manufacture, and generally provide limited 3D control over sound propagation. Here, we introduce a MHz-frequency ultrasonic metamaterial based on laser-engraved glass. By structuring meta-voxels with different engraving patterns, we define a fully-3D, anisotropic metamaterial exhibiting local variations in the sound speed of up to 20% compared to unstructured glass, and losses 100x lower than in comparable 3D printed metamaterials. We use this metamaterial to define a library of standard elements that can be modularly combined to create and shape complex-patterned ultrasonic fields. Our experiments are supported by a theoretical model, which provides additional insights into the microstructural origin of the metamaterial behavior and opens the door to designing tailored ultrasound fields and responses.",
+    "url": "http://arxiv.org/abs/2512.20506v1",
+    "date": "2025-12-23T16:56:03+00:00",
+    "authors": [
+      "Oscar Demeulenaere",
+      "Nikita Ustimenko",
+      "Athanasios G. Athanassiadis",
+      "Lovish Gulati",
+      "Carsten Rockstuhl",
+      "Peer Fischer"
+    ]
+  },
+  {
+    "title": "Nebula: Enable City-Scale 3D Gaussian Splatting in Virtual Reality via Collaborative Rendering and Accelerated Stereo Rasterization",
+    "summary": "3D Gaussian splatting (3DGS) has drawn significant attention in the architectural community recently. However, current architectural designs often overlook the 3DGS scalability, making them fragile for extremely large-scale 3DGS. Meanwhile, the VR bandwidth requirement makes it impossible to deliver high-fidelity and smooth VR content from the cloud.\n  We present Nebula, a coherent acceleration framework for large-scale 3DGS collaborative rendering. Instead of streaming videos, Nebula streams intermediate results after the LoD search, reducing 1925% data communication between the cloud and the client. To further enhance the motion-to-photon experience, we introduce a temporal-aware LoD search in the cloud that tames the irregular memory access and reduces redundant data access by exploiting temporal coherence across frames. On the client side, we propose a novel stereo rasterization that enables two eyes to share most computations during the stereo rendering with bit-accurate quality. With minimal hardware augmentations, Nebula achieves 2.7$\\times$ motion-to-photon speedup and reduces 1925% bandwidth over lossy video streaming.",
+    "url": "http://arxiv.org/abs/2512.20495v1",
+    "date": "2025-12-23T16:42:14+00:00",
+    "authors": [
+      "He Zhu",
+      "Zheng Liu",
+      "Xingyang Li",
+      "Anbang Wu",
+      "Jieru Zhao",
+      "Fangxin Liu",
+      "Yiming Gan",
+      "Jingwen Leng",
+      "Yu Feng"
+    ]
+  },
+  {
+    "title": "A High-Dimensional Quantum Blockchain Protocol Based on Time- Entanglement",
+    "summary": "Rapid advancements in quantum computing and machine learning threaten the long-term security of classical blockchain systems, whose protection mechanisms largely rely on computational difficulties. In this study, we propose a quantum blockchain protocol whose protection mechanism is directly derived from quantum mechanical principles. The protocol combines high-dimensional Bell states, time-entanglement, entanglement switching, and high-dimensional superdense coding. Encoding classical block information into time-delimited qudit states allows block identity and data verification to be implemented through the causal sequencing of quantum measurements instead of cryptographic hash functions. High-dimensional coding increases the information capacity per quantum carrier and improves noise resistance. Time-entanglement provides distributed authentication, non-repudiation, and tamper detection across the blockchain. Each block derives its own public-private key pair directly from the observed quantum correlations by performing high-dimensional Bell state measurements in successive time steps. Because these keys are dependent on the time ordering of measurements, attempts to alter block data or disrupt the protocol's timing structure inevitably affect the reconstructed correlations and are revealed during validation. Recent advances in the creation and detection of high-dimensional time-slice entanglement demonstrate that the necessary quantum resources are compatible with emerging quantum communication platforms. Taken together, these considerations suggest that the proposed framework can be evaluated as a viable and scalable candidate for quantum-secure blockchain architectures in future quantum network environments.",
+    "url": "http://arxiv.org/abs/2512.20489v1",
+    "date": "2025-12-23T16:31:12+00:00",
+    "authors": [
+      "Akta\u015f",
+      "Arzu",
+      "Y\u0131lmaz",
+      "\u0130hsan"
+    ]
+  },
+  {
+    "title": "Multi-temporal Adaptive Red-Green-Blue and Long-Wave Infrared Fusion for You Only Look Once-Based Landmine Detection from Unmanned Aerial Systems",
+    "summary": "Landmines remain a persistent humanitarian threat, with 110 million actively deployed mines across 60 countries, claiming 26,000 casualties annually. This research evaluates adaptive Red-Green-Blue (RGB) and Long-Wave Infrared (LWIR) fusion for Unmanned Aerial Systems (UAS)-based detection of surface-laid landmines, leveraging the thermal contrast between the ordnance and the surrounding soil to enhance feature extraction. Using You Only Look Once (YOLO) architectures (v8, v10, v11) across 114 test images, generating 35,640 model-condition evaluations, YOLOv11 achieved optimal performance (86.8% mAP), with 10 to 30% thermal fusion at 5 to 10m altitude identified as the optimal detection parameters. A complementary architectural comparison revealed that while RF-DETR achieved the highest accuracy (69.2% mAP), followed by Faster R-CNN (67.6%), YOLOv11 (64.2%), and RetinaNet (50.2%), YOLOv11 trained 17.7 times faster than the transformer-based RF-DETR (41 minutes versus 12 hours), presenting a critical accuracy-efficiency tradeoff for operational deployment. Aggregated multi-temporal training datasets outperformed season-specific approaches by 1.8 to 9.6%, suggesting that models benefit from exposure to diverse thermal conditions. Anti-Tank (AT) mines achieved 61.9% detection accuracy, compared with 19.2% for Anti-Personnel (AP) mines, reflecting both the size differential and thermal-mass differences between these ordnance classes. As this research examined surface-laid mines where thermal contrast is maximized, future research should quantify thermal contrast effects for mines buried at varying depths across heterogeneous soil types.",
+    "url": "http://arxiv.org/abs/2512.20487v1",
+    "date": "2025-12-23T16:26:47+00:00",
+    "authors": [
+      "James E. Gallagher",
+      "Edward J. Oughton",
+      "Jana Kosecka"
+    ]
+  },
+  {
+    "title": "Supersonic sonic patch solution for the two-dimensional Euler equations with a van der Waals equation of state",
+    "summary": "We investigate supersonic transonic phenomena in the two-dimensional compressible Euler equations governed by a polytropic van der Waals equation of state. In contrast to the ideal gas setting, the non-ideal pressure law introduces stronger nonlinear effects and modifies the degeneracy structure near sonic states, which significantly complicates the analytical treatment of transonic flows. Within the self-similar framework associated with the four-state Riemann problem, we construct a supersonic sonic patch solution that connects a strictly supersonic region to a sonic boundary along a pseudo streamline. The analysis is based on a characteristic decomposition combined with a partial hodograph transformation, through which the problem is reformulated as a degenerate hyperbolic system. We establish the existence of a globally defined supersonic solution and prove its uniform regularity up to the sonic curve. In addition, we investigate the regularity properties of the resulting sonic boundary. Our results extend the theory of supersonic sonic patches from polytropic gases to a realistic non-ideal gas model.",
+    "url": "http://arxiv.org/abs/2512.20484v1",
+    "date": "2025-12-23T16:20:45+00:00",
+    "authors": [
+      "Anamika Pandey",
+      "T. Raja Sekhar"
+    ]
+  },
+  {
+    "title": "Drift-Corrected Monocular VIO and Perception-Aware Planning for Autonomous Drone Racing",
+    "summary": "The Abu Dhabi Autonomous Racing League(A2RL) x Drone Champions League competition(DCL) requires teams to perform high-speed autonomous drone racing using only a single camera and a low-quality inertial measurement unit -- a minimal sensor set that mirrors expert human drone racing pilots. This sensor limitation makes the system susceptible to drift from Visual-Inertial Odometry (VIO), particularly during long and fast flights with aggressive maneuvers. This paper presents the system developed for the championship, which achieved a competitive performance. Our approach corrected VIO drift by fusing its output with global position measurements derived from a YOLO-based gate detector using a Kalman filter. A perception-aware planner generated trajectories that balance speed with the need to keep gates visible for the perception system. The system demonstrated high performance, securing podium finishes across multiple categories: third place in the AI Grand Challenge with top speed of 43.2 km/h, second place in the AI Drag Race with over 59 km/h, and second place in the AI Multi-Drone Race. We detail the complete architecture and present a performance analysis based on experimental data from the competition, contributing our insights on building a successful system for monocular vision-based autonomous drone flight.",
+    "url": "http://arxiv.org/abs/2512.20475v1",
+    "date": "2025-12-23T16:12:10+00:00",
+    "authors": [
+      "Maulana Bisyir Azhari",
+      "Donghun Han",
+      "Je In You",
+      "Sungjun Park",
+      "David Hyunchul Shim"
+    ]
+  },
+  {
+    "title": "Enriching Earth Observation labeled data with Quantum Conditioned Diffusion Models",
+    "summary": "The rapid adoption of diffusion models (DMs) in the Earth Observation (EO) domain has unlocked new generative capabilities aimed at producing new samples, whose statistical properties closely match real imagery, for tasks such as synthesizing missing data, augmenting scarce labeled datasets, and improving image reconstruction. This is particularly relevant in EO, where labeled data are often costly to obtain and limited in availability. However, classical DMs still face significant computational limitations, requiring hundreds to thousands of inference steps, as well as difficulties in capturing the intricate spatial and spectral correlations characteristic of EO data. Recent research in Quantum Machine Learning (QML), including initial attempts of Quantum Generative Models, offers a fundamentally different approach to overcome these challenges. Motivated by these considerations, we introduce the Quanvolutional Conditioned U-Net (QCU-Net), a hybrid quantum--classical architecture that applies quantum operations within a conditioned diffusion framework using a novel quanvolutional feature-extraction approach, for generating synthetic labeled EO imagery. Extensive experiments on the EuroSAT RGB dataset demonstrate that our QCU-Net achieves superior results. Notably, it reduces the Fr\u00e9chet Inception Distance by 64%, lowers the Kernel Inception Distance by 76%, and yields higher semantic accuracy. Ablation studies further reveal that strategically positioning quantum layers and employing entangling variational circuits enhance model performance and convergence. This work represents the first successful adaptation of class-conditioned quantum diffusion modeling in the EO domain, paving the way for quantum-enhanced remote sensing imagery synthesis.",
+    "url": "http://arxiv.org/abs/2512.20448v1",
+    "date": "2025-12-23T15:40:31+00:00",
+    "authors": [
+      "Francesco Mauro",
+      "Francesca De Falco",
+      "Lorenzo Papa",
+      "Andrea Ceschini",
+      "Alessandro Sebastianelli",
+      "Paolo Gamba",
+      "Massimo Panella",
+      "Silvia Ullo"
+    ]
+  },
+  {
+    "title": "Neural Scaling Laws for Learning-based Identification of Nonlinear Systems",
+    "summary": "The use of machine learning models in system identification has increased due to their ability to approximate complex nonlinear dynamics with high accuracy. However, often it is not clear how the performance of trained models scales with given resources such as data, compute, and model size. To allow for a better understanding of the scalability of the performance of machine learning models, we verify neural scaling laws (NSLs) in the context of system identification from input-state-output data using different evaluation metrics for accuracy and different system architectures, including input-affine and physics-informed port-Hamiltonian representations. Our verified NSLs can help to forecast performance improvements and guide model design or data acquisition.",
+    "url": "http://arxiv.org/abs/2512.20447v1",
+    "date": "2025-12-23T15:39:24+00:00",
+    "authors": [
+      "Marco Roschkowski",
+      "Karim Cherifi",
+      "Hannes Gernandt"
+    ]
+  },
+  {
+    "title": "Quantum Bayesian Optimization for the Automatic Tuning of Lorenz-96 as a Surrogate Climate Model",
+    "summary": "In this work, we propose a hybrid quantum-inspired heuristic for automatically tuning the Lorenz-96 model -- a simple proxy to describe atmospheric dynamics, yet exhibiting chaotic behavior. Building on the history matching framework by Lguensat et al. (2023), we fully automate the tuning process with a new convergence criterion and propose replacing classical Gaussian process emulators with quantum counterparts. We benchmark three quantum kernel architectures, distinguished by their quantum feature map circuits. A dimensionality argument implies, in principle, an increased expressivity of the quantum kernels over their classical competitors. For each kernel type, we perform an extensive hyperparameter optimization of our tuning algorithm. We confirm the validity of a quantum-inspired approach based on statevector simulation by numerically demonstrating the superiority of two studied quantum kernels over the canonical classical RBF kernel. Finally, we discuss the pathway towards real quantum hardware, mainly driven by a transition to shot-based simulations and evaluating quantum kernels via randomized measurements, which can mitigate the effect of gate errors. The very low qubit requirements and moderate circuit depths, together with a minimal number of trainable circuit parameters, make our method particularly NISQ-friendly.",
+    "url": "http://arxiv.org/abs/2512.20437v1",
+    "date": "2025-12-23T15:26:24+00:00",
+    "authors": [
+      "Paul J. Christiansen",
+      "Daniel Ohl de Mello",
+      "Cedric Br\u00fcgmann",
+      "Steffen Hien",
+      "Felix Herbort",
+      "Martin Kiffner",
+      "Lorenzo Pastori",
+      "Veronika Eyring",
+      "Mierk Schwabe"
+    ]
+  },
+  {
+    "title": "Dual-Encoder Transformer-Based Multimodal Learning for Ischemic Stroke Lesion Segmentation Using Diffusion MRI",
+    "summary": "Accurate segmentation of ischemic stroke lesions from diffusion magnetic resonance imaging (MRI) is essential for clinical decision-making and outcome assessment. Diffusion-Weighted Imaging (DWI) and Apparent Diffusion Coefficient (ADC) scans provide complementary information on acute and sub-acute ischemic changes; however, automated lesion delineation remains challenging due to variability in lesion appearance.\n  In this work, we study ischemic stroke lesion segmentation using multimodal diffusion MRI from the ISLES 2022 dataset. Several state-of-the-art convolutional and transformer-based architectures, including U-Net variants, Swin-UNet, and TransUNet, are benchmarked. Based on performance, a dual-encoder TransUNet architecture is proposed to learn modality-specific representations from DWI and ADC inputs. To incorporate spatial context, adjacent slice information is integrated using a three-slice input configuration.\n  All models are trained under a unified framework and evaluated using the Dice Similarity Coefficient (DSC). Results show that transformer-based models outperform convolutional baselines, and the proposed dual-encoder TransUNet achieves the best performance, reaching a Dice score of 85.4% on the test set. The proposed framework offers a robust solution for automated ischemic stroke lesion segmentation from diffusion MRI.",
+    "url": "http://arxiv.org/abs/2512.20436v1",
+    "date": "2025-12-23T15:24:31+00:00",
+    "authors": [
+      "Muhammad Usman",
+      "Azka Rehman",
+      "Muhammad Mutti Ur Rehman",
+      "Abd Ur Rehman",
+      "Muhammad Umar Farooq"
+    ]
+  },
+  {
+    "title": "Scaling roadmap for modular trapped-ion QEC and lattice-surgery teleportation",
+    "summary": "We present a footprint study for the scaling of modular quantum error correction (QEC) protocols designed for triangular color codes, including a lattice-surgery-based logical teleportation gadget, and compare the performance of various possible architectures based on trapped ions. The differences in these architectures arise from the technology that enables the connectivity between physical qubits and the modularity required for the QEC gadgets, which is either based on laser-beam deflectors focused to independent modules hosting mid-size ion crystals, or integrated photonics guided to segmented modules of the trap and allowing for the manipulation of smaller ion crystals. Our approach integrates the transpilation of the QEC gadgets into native trapped-ion primitives and a detailed account of the specific laser addressing and ion transport leading to different amounts of crosstalk errors, motional excitation and idle qubit errors. Combining a microscopically-informed noise model with an efficient Pauli-frame simulator and different scalable decoders, we assess the near-term performance of the color-code memory and teleportation protocols on these architectures. Our analysis demonstrates that modular color-code teleportation is achievable in these near-term trapped-ion architectures, and identifies the integrated-photonics connectivity as the most promising route for longer-term scaling.",
+    "url": "http://arxiv.org/abs/2512.20435v1",
+    "date": "2025-12-23T15:24:27+00:00",
+    "authors": [
+      "C\u00e9sar Benito",
+      "Alfredo Ricci Vasquez",
+      "Jonathan Home",
+      "Karan K. Mehta",
+      "Thomas Monz",
+      "Markus M\u00fcller",
+      "Alejandro Bermudez"
+    ]
+  },
+  {
+    "title": "Evasion-Resilient Detection of DNS-over-HTTPS Data Exfiltration: A Practical Evaluation and Toolkit",
+    "summary": "The purpose of this project is to assess how well defenders can detect DNS-over-HTTPS (DoH) file exfiltration, and which evasion strategies can be used by attackers. While providing a reproducible toolkit to generate, intercept and analyze DoH exfiltration, and comparing Machine Learning vs threshold-based detection under adversarial scenarios. The originality of this project is the introduction of an end-to-end, containerized pipeline that generates configurable file exfiltration over DoH using several parameters (e.g., chunking, encoding, padding, resolver rotation). It allows for file reconstruction at the resolver side, while extracting flow-level features using a fork of DoHLyzer. The pipeline contains a prediction side, which allows the training of machine learning models based on public labelled datasets and then evaluates them side-by-side with threshold-based detection methods against malicious and evasive DNS-Over-HTTPS traffic. We train Random Forest, Gradient Boosting and Logistic Regression classifiers on a public DoH dataset and benchmark them against evasive DoH exfiltration scenarios. The toolkit orchestrates traffic generation, file capture, feature extraction, model training and analysis. The toolkit is then encapsulated into several Docker containers for easy setup and full reproducibility regardless of the platform it is run on. Future research regarding this project is directed at validating the results on mixed enterprise traffic, extending the protocol coverage to HTTP/3/QUIC request, adding a benign traffic generation, and working on real-time traffic evaluation. A key objective is to quantify when stealth constraints make DoH exfiltration uneconomical and unworthy for the attacker.",
+    "url": "http://arxiv.org/abs/2512.20423v1",
+    "date": "2025-12-23T15:07:17+00:00",
+    "authors": [
+      "Adam Elaoumari"
+    ]
+  },
+  {
+    "title": "Simplifying Multi-Task Architectures Through Task-Specific Normalization",
+    "summary": "Multi-task learning (MTL) aims to leverage shared knowledge across tasks to improve generalization and parameter efficiency, yet balancing resources and mitigating interference remain open challenges. Architectural solutions often introduce elaborate task-specific modules or routing schemes, increasing complexity and overhead. In this work, we show that normalization layers alone are sufficient to address many of these challenges. Simply replacing shared normalization with task-specific variants already yields competitive performance, questioning the need for complex designs. Building on this insight, we propose Task-Specific Sigmoid Batch Normalization (TS$\u03c3$BN), a lightweight mechanism that enables tasks to softly allocate network capacity while fully sharing feature extractors. TS$\u03c3$BN improves stability across CNNs and Transformers, matching or exceeding performance on NYUv2, Cityscapes, CelebA, and PascalContext, while remaining highly parameter-efficient. Moreover, its learned gates provide a natural framework for analyzing MTL dynamics, offering interpretable insights into capacity allocation, filter specialization, and task relationships. Our findings suggest that complex MTL architectures may be unnecessary and that task-specific normalization offers a simple, interpretable, and efficient alternative.",
+    "url": "http://arxiv.org/abs/2512.20420v1",
+    "date": "2025-12-23T15:02:12+00:00",
+    "authors": [
+      "Mihai Suteu",
+      "Ovidiu Serban"
+    ]
+  },
+  {
+    "title": "Scalable Relay Switching Platform for Automated Multi-Point Resistance Measurements",
+    "summary": "In both research and industrial settings, it is often necessary to expand the input/output channels of measurement instruments using relay-based multiplexer boards. In research activities in particular, the need for a highly flexible and easily configurable solution frequently leads to the development of customized systems. To address this challenge, we developed a system optimized for automated direct current (DC) measurements. The result is based on a 4x4 switching platform that simplifies measurement procedures that require instrument routing. The platform is based on a custom-designed circuit board controlled by a microcontroller. We selected bistable relays to guarantee contact stability after switching. We finally developed a system architecture that allows for straightforward expansion and scalability by connecting multiple platforms. We share both the hardware design source files and the firmware source code on GitHub with the open-source community. This work presents the design and development of the proposed system, followed by the performance evaluation. Finally, we present a test of our designed system applied to a specific case study: the DC analysis of complex resistive networks through multi-point resistance measurements using only a single voltmeter and current source.",
+    "url": "http://arxiv.org/abs/2512.20419v1",
+    "date": "2025-12-23T15:01:56+00:00",
+    "authors": [
+      "Edoardo Boretti",
+      "Kostiantyn Torokhtii",
+      "Enrico Silva",
+      "Andrea Alimenti"
+    ]
+  },
+  {
+    "title": "From Cosmology to Cosmonomy",
+    "summary": "For most of its history, cosmology was a qualitatively constrained discourse on the universe, shaped by limited observational access and the absence of global dynamical laws. This situation has changed decisively in recent decades. Modern cosmology is now driven by an unprecedented flow of high-precision data from a wide range of independent probes, including the cosmic microwave background, large-scale structure, supernovae, baryon acoustic oscillations, gravitational lensing, cosmic chronometers, redshift-space distortions, gravitational-wave standard sirens, and emerging 21-cm observations, among others. This observational wealth is matched by a concrete theoretical and mathematical framework, based on general relativity, which provides the dynamical equations governing the evolution of spacetime and matter at cosmic scales. Combined with explicit background and perturbative equations, this framework enables quantitative, predictive, and falsifiable descriptions of cosmic evolution. Thus, cosmology operates today as a nomological natural science of the observable universe, characterized by general laws, predictive power, and systematic empirical testing. We argue that this epistemic transformation motivates a corresponding conceptual shift, directly analogous to the historical transition from astrology to astronomy. In this sense, the transition from cosmology to \\emph{cosmonomy} should begin to be discussed among cosmologists, or, more precisely, among cosmonomers.",
+    "url": "http://arxiv.org/abs/2512.20416v1",
+    "date": "2025-12-23T15:00:11+00:00",
+    "authors": [
+      "Emmanuel N. Saridakis"
+    ]
+  },
+  {
+    "title": "Surface Exciton Polaritons and Near-Zero Permittivity Surface Waves Supported by Artificial Organic Hyperbolic Metamaterials",
+    "summary": "Hyperbolic metamaterials enable extreme light confinement and control of photonic states, but their realization has been restricted to inorganic architectures. Here, a fully organic route to fabricate artificial hyperbolic metamaterials based on multilayered thin films of J-aggregate carbocyanine dyes alternated with polyelectrolytes is introduced. These structures exhibit strong optical anisotropy and experimentally support hyperbolic surface exciton polaritons and, for selected dyes, additional surface waves in near-zero permittivity regimes. Spectroscopic ellipsometry confirms a uniaxial dielectric tensor with negative in-plane and positive out-of-plane components, close to the absorption peaks of the constituent J-aggregates. This anisotropy is preserved across individual layers, demonstrating the robustness of the layer-by-layer approach and enabling the coupling of surface exciton polaritons and near-zero permittivity modes even in films only a few nanometres thick. Transfer-matrix simulations based on the obtained dielectric tensor reproduce the coupling conditions for all thicknesses, validating the optical model. Structural characterization reveals the link between optical anisotropy and supramolecular order, with preferential in-plane molecular orientation and the evolution from discrete nanostructures to continuous films as deposition progresses. These organic hyperbolic metamaterial architectures, associated with narrow excitonic resonances from J-aggregates, offer a unique platform for tailoring emission, energy transport, and exploring polariton dynamics at the nanoscale.",
+    "url": "http://arxiv.org/abs/2512.20411v1",
+    "date": "2025-12-23T14:56:07+00:00",
+    "authors": [
+      "Jos\u00e9 N. Gama",
+      "Diogo Cunha",
+      "Carla Est\u00e9vez-Varela",
+      "Marina Garc\u00eda-Pardo",
+      "Pablo Pedreira",
+      "Adelaide Miranda",
+      "M. Carmen L\u00f3pez-Gonz\u00e1lez",
+      "Pieter A. A. De Beule",
+      "Eduardo Solano",
+      "Rosalia Serna",
+      "Mikhail Vasilevskiy",
+      "Martin Lopez-Garcia",
+      "Isabel Pastoriza-Santos",
+      "Sara N\u00fa\u00f1ez-S\u00e1nchez"
+    ]
+  },
+  {
+    "title": "AUDRON: A Deep Learning Framework with Fused Acoustic Signatures for Drone Type Recognition",
+    "summary": "Unmanned aerial vehicles (UAVs), commonly known as drones, are increasingly used across diverse domains, including logistics, agriculture, surveillance, and defense. While these systems provide numerous benefits, their misuse raises safety and security concerns, making effective detection mechanisms essential. Acoustic sensing offers a low-cost and non-intrusive alternative to vision or radar-based detection, as drone propellers generate distinctive sound patterns. This study introduces AUDRON (AUdio-based Drone Recognition Network), a hybrid deep learning framework for drone sound detection, employing a combination of Mel-Frequency Cepstral Coefficients (MFCC), Short-Time Fourier Transform (STFT) spectrograms processed with convolutional neural networks (CNNs), recurrent layers for temporal modeling, and autoencoder-based representations. Feature-level fusion integrates complementary information before classification. Experimental evaluation demonstrates that AUDRON effectively differentiates drone acoustic signatures from background noise, achieving high accuracy while maintaining generalizability across varying conditions. AUDRON achieves 98.51 percent and 97.11 percent accuracy in binary and multiclass classification. The results highlight the advantage of combining multiple feature representations with deep learning for reliable acoustic drone detection, suggesting the framework's potential for deployment in security and surveillance applications where visual or radar sensing may be limited.",
+    "url": "http://arxiv.org/abs/2512.20407v1",
+    "date": "2025-12-23T14:55:08+00:00",
+    "authors": [
+      "Rajdeep Chatterjee",
+      "Sudip Chakrabarty",
+      "Trishaani Acharjee",
+      "Deepanjali Mishra"
+    ]
+  },
+  {
+    "title": "Microstructured Electrode-Piezopolymer Interface for Ultrasound Transducers with Enhanced Flexibility and Acoustic Performance",
+    "summary": "Ultrasound transducers made from rigid piezoceramics are difficult to adapt for wearable or conformal applications. Piezopolymer-based transducers offer a practical alternative; however, most existing studies focus on piezoelectric materials, while the influence of electrode material and electrode-polymer interface remains underexplored. This study leverages different interface-engineering strategies to examine the influence of electrode-piezopolymer interface morphology on piezoelectric, dielectric, and acoustic behavior in flexible transducers. Devices were fabricated using silver (Ag), gold (Au), graphene flakes (GF), laser-induced graphene (LIG), and Au-decorated LIG electrodes, enabling comparison across interfacial architectures. LIG-based transducers showed strong acoustic and piezoelectric output due to partial infiltration of the piezopolymer into the porous LIG network, which enhances interfacial contact and stress transfer. Au-based transducers achieved comparable acoustic output. In contrast, dense Ag electrodes and layered GF films provided limited coupling, resulting in reduced electromechanical response. LIG-based transducers exhibited the highest flexibility and durability, retaining stable performance after 10,000 bending cycles and an eight-week aging study, whereas GF, Ag, and Au devices degraded under bending, and Ag electrodes declined over time. These findings demonstrate that engineering the electrode-polymer interface is critical for high-performance flexible ultrasound transducers and identify LIG as a strong candidate for wearable imaging applications.",
+    "url": "http://arxiv.org/abs/2512.20400v1",
+    "date": "2025-12-23T14:40:38+00:00",
+    "authors": [
+      "Spencer Hagen\u00a7",
+      "Dulcce A Valenzuela\u00a7",
+      "Parag V Chitnis",
+      "Shirin Movaghgharnezhad"
+    ]
+  },
+  {
+    "title": "GeoTransolver: Learning Physics on Irregumar Domains Using Multi-scale Geometry Aware Physics Attention Transformer",
+    "summary": "We present GeoTransolver, a Multiscale Geometry-Aware Physics Attention Transformer for CAE that replaces standard attention with GALE, coupling physics-aware self-attention on learned state slices with cross-attention to a shared geometry/global/boundary-condition context computed from multi-scale ball queries (inspired by DoMINO) and reused in every block. Implemented and released in NVIDIA PhysicsNeMo, GeoTransolver persistently projects geometry, global and boundary condition parameters into physical state spaces to anchor latent computations to domain structure and operating regimes. We benchmark GeoTransolver on DrivAerML, Luminary SHIFT-SUV, and Luminary SHIFT-Wing, comparing against Domino, Transolver (as released in PhysicsNeMo), and literature-reported AB-UPT, and evaluate drag/lift R2 and Relative L1 errors for field variables. GeoTransolver delivers better accuracy, improved robustness to geometry/regime shifts, and favorable data efficiency; we include ablations on DrivAerML and qualitative results such as contour plots and design trends for the best GeoTransolver models. By unifying multiscale geometry-aware context with physics-based attention in a scalable transformer, GeoTransolver advances operator learning for high-fidelity surrogate modeling across complex, irregular domains and non-linear physical regimes.",
+    "url": "http://arxiv.org/abs/2512.20399v1",
+    "date": "2025-12-23T14:40:08+00:00",
+    "authors": [
+      "Corey Adams",
+      "Rishikesh Ranade",
+      "Ram Cherukuri",
+      "Sanjay Choudhry"
+    ]
+  },
+  {
+    "title": "Resilient Packet Forwarding: A Reinforcement Learning Approach to Routing in Gaussian Interconnected Networks with Clustered Faults",
+    "summary": "As Network-on-Chip (NoC) and Wireless Sensor Network architectures continue to scale, the topology of the underlying network becomes a critical factor in performance. Gaussian Interconnected Networks based on the arithmetic of Gaussian integers, offer attractive properties regarding diameter and symmetry. Despite their attractive theoretical properties, adaptive routing techniques in these networks are vulnerable to node and link faults, leading to rapid degradation in communication reliability. Node failures (particularly those following Gaussian distributions, such as thermal hotspots or physical damage clusters) pose severe challenges to traditional deterministic routing. This paper proposes a fault-aware Reinforcement Learning (RL) routing scheme tailored for Gaussian Interconnected Networks. By utilizing a PPO (Proximal Policy Optimization) agent with a specific reward structure designed to penalize fault proximity, the system dynamically learns to bypass faulty regions. We compare our proposed RL-based routing protocol against a greedy adaptive shortest-path routing algorithm. Experimental results demonstrate that the RL agent significantly outperforms the adaptive routing sustaining a Packet Delivery Ratio (PDR) of 0.95 at 40% fault density compared to 0.66 for the greedy. Furthermore, the RL approach exhibits effective delivery rates compared to the greedy adaptive routing, particularly under low network load of 20% at 0.57 vs. 0.43, showing greater proficiency in managing congestion, validating its efficacy in stochastic, fault-prone topologies",
+    "url": "http://arxiv.org/abs/2512.20394v1",
+    "date": "2025-12-23T14:31:24+00:00",
+    "authors": [
+      "Mohammad Walid Charrwi",
+      "Zaid Hussain"
+    ]
+  },
+  {
+    "title": "Contingency Model-based Control (CMC) for Communicationless Cooperative Collision Avoidance in Robot Swarms",
+    "summary": "Cooperative collision avoidance between robots in swarm operations remains an open challenge. Assuming a decentralized architecture, each robot is responsible for making its own control decisions, including motion planning. To this end, most existing approaches mostly rely some form of (wireless) communication between the agents of the swarm. In reality, however, communication is brittle. It may be affected by latency, further delays and packet losses, transmission faults, and is subject to adversarial attacks, such as jamming or spoofing. This paper proposes Contingency Model-based Control (CMC) as a communicationless alternative. It follows the implicit cooperation paradigm, under which the design of the robots is based on consensual (offline) rules, similar to traffic rules. They include the definition of a contingency trajectory for each robot, and a method for construction of mutual collision avoidance constraints. The setup is shown to guarantee the recursive feasibility and collision avoidance between all swarm members in closed-loop operation. Moreover, CMC naturally satisfies the Plug \\& Play paradigm, i.e., for new robots entering the swarm. Two numerical examples demonstrate that the collision avoidance guarantee is intact and that the robot swarm operates smoothly under the CMC regime.",
+    "url": "http://arxiv.org/abs/2512.20391v1",
+    "date": "2025-12-23T14:28:42+00:00",
+    "authors": [
+      "Georg Schildbach"
+    ]
+  },
+  {
+    "title": "Identifying Appropriately-Sized Services with Deep Reinforcement Learning",
+    "summary": "Service-based architecture (SBA) has gained attention in industry and academia as a means to modernize legacy systems. It refers to a design style that enables systems to be developed as suites of small, loosely coupled, and autonomous components (services) that encapsulate functionality and communicate via language-agnostic APIs. However, defining appropriately sized services that capture cohesive subsets of system functionality remains challenging. Existing work often relies on the availability of documentation, access to project personnel, or a priori knowledge of the target number of services, assumptions that do not hold in many real-world scenarios. Our work addresses these limitations using a deep reinforcement learning-based approach to identify appropriately sized services directly from implementation artifacts. We present Rake, a reinforcement learning-based technique that leverages available system documentation and source code to guide service decomposition at the level of implementation methods. Rake does not require specific documentation or access to project personnel and is language-agnostic. It also supports a customizable objective function that balances modularization quality and business capability alignment, i.e., the degree to which a service covers the targeted business capability. We applied Rake to four open-source legacy projects and compared it with two state-of-the-art techniques. On average, Rake achieved 7-14 percent higher modularization quality and 18-22 percent stronger business capability alignment. Our results further show that optimizing solely for business context can degrade decomposition quality in tightly coupled systems, highlighting the need for balanced objectives.",
+    "url": "http://arxiv.org/abs/2512.20381v1",
+    "date": "2025-12-23T14:12:02+00:00",
+    "authors": [
+      "Syeda Tasnim Fabiha",
+      "Saad Shafiq",
+      "Wesley Klewerton Guez Assun\u00e7\u00e3o",
+      "Nenad Medvidovi\u0107"
+    ]
+  },
+  {
+    "title": "The impact of selection criteria on the properties of green valley galaxies",
+    "summary": "Context: The bi-modality in the distribution of galaxies usually obtained from colour-colour or colour-stellar mass diagrams has been studied to show the difference between the galaxies in the blue cloud and in the red sequence and to define the green valley region. As a transition region, the green valley galaxies can give clues about morphological transformation of galaxies from late- to early-types, and therefore the selection of green valley is of fundamental importance. Aims: In this work, for the first time, we evaluate the selection effects of the most used green valley selection criteria. The aim is to understand how these criteria affect the identification of green valley galaxies, their properties, and their impact on galaxy evolution studies. Methods: Using the SDSS optical and GALEX ultraviolet data at redshift z < 0.1, we selected the eight most commonly used criteria based on colours, specific star formation rate, and star formation rate vs. stellar mass. We then studied the properties of the green valley galaxies (their stellar mass, star formation rate, specific star formation rate, intrinsic brightness, morphological and\n  pectroscopic types) for each selection criterion. Results: We found that when using different criteria, we select different types of galaxies. UV-optical colour-based criteria tend to select more massive galaxies, with lower star formation rates, with higher fractions of composite and elliptical galaxies, than when using pure optical colours. Our results also show that the colour-based criteria are the most sensitive to galaxy properties, rapidly changing the selection of green valley galaxies. Conclusions: Whenever possible, we suggest avoiding the green valley colour-based selection and using other methods or a combination of several, such as the star formation rate vs. stellar mass or specific star formation rate.",
+    "url": "http://arxiv.org/abs/2512.20379v1",
+    "date": "2025-12-23T14:02:54+00:00",
+    "authors": [
+      "Beatrice Nyiransengiyumva",
+      "Mirjana Povic",
+      "Pheneas Nkundabakura",
+      "Tom Mutabazi",
+      "Antoine Mahoro"
+    ]
+  },
+  {
+    "title": "A supersolution approach to doubly degenerate parabolic equations with weights",
+    "summary": "We consider the Cauchy problem in the Euclidean space for a doubly\n  degenerate parabolic equation with a space-dependent exponential\n  weight, where the exponent satisfies the doubling condition. In\n  particular, both the so called logconvex and logconcave cases may be\n  considered. Under the additional natural assumptions we construct\n  supersolutions and subsolutions allowing us to control the precise\n  sharp temporal decay bounds. We apply our results also to an\n  equation with inhomogeneous density, via a suitable variable\n  transformation.",
+    "url": "http://arxiv.org/abs/2512.20373v1",
+    "date": "2025-12-23T13:57:20+00:00",
+    "authors": [
+      "Daniele Andreucci",
+      "Anatoli F. Tedeev"
+    ]
+  },
+  {
+    "title": "Field-Space Attention for Structure-Preserving Earth System Transformers",
+    "summary": "Accurate and physically consistent modeling of Earth system dynamics requires machine-learning architectures that operate directly on continuous geophysical fields and preserve their underlying geometric structure. Here we introduce Field-Space attention, a mechanism for Earth system Transformers that computes attention in the physical domain rather than in a learned latent space. By maintaining all intermediate representations as continuous fields on the sphere, the architecture enables interpretable internal states and facilitates the enforcement of scientific constraints. The model employs a fixed, non-learned multiscale decomposition and learns structure-preserving deformations of the input field, allowing coherent integration of coarse and fine-scale information while avoiding the optimization instabilities characteristic of standard single-scale Vision Transformers. Applied to global temperature super-resolution on a HEALPix grid, Field-Space Transformers converge more rapidly and stably than conventional Vision Transformers and U-Net baselines, while requiring substantially fewer parameters. The explicit preservation of field structure throughout the network allows physical and statistical priors to be embedded directly into the architecture, yielding improved fidelity and reliability in data-driven Earth system modeling. These results position Field-Space Attention as a compact, interpretable, and physically grounded building block for next-generation Earth system prediction and generative modeling frameworks.",
+    "url": "http://arxiv.org/abs/2512.20350v1",
+    "date": "2025-12-23T13:31:21+00:00",
+    "authors": [
+      "Maximilian Witte",
+      "Johannes Meuer",
+      "\u00c9tienne Pl\u00e9siat",
+      "Christopher Kadow"
+    ]
+  },
+  {
+    "title": "A DeepSeek-Powered AI System for Automated Chest Radiograph Interpretation in Clinical Practice",
+    "summary": "A global shortage of radiologists has been exacerbated by the significant volume of chest X-ray workloads, particularly in primary care. Although multimodal large language models show promise, existing evaluations predominantly rely on automated metrics or retrospective analyses, lacking rigorous prospective clinical validation. Janus-Pro-CXR (1B), a chest X-ray interpretation system based on DeepSeek Janus-Pro model, was developed and rigorously validated through a multicenter prospective trial (NCT07117266). Our system outperforms state-of-the-art X-ray report generation models in automated report generation, surpassing even larger-scale models including ChatGPT 4o (200B parameters), while demonstrating reliable detection of six clinically critical radiographic findings. Retrospective evaluation confirms significantly higher report accuracy than Janus-Pro and ChatGPT 4o. In prospective clinical deployment, AI assistance significantly improved report quality scores, reduced interpretation time by 18.3% (P < 0.001), and was preferred by a majority of experts in 54.3% of cases. Through lightweight architecture and domain-specific optimization, Janus-Pro-CXR improves diagnostic reliability and workflow efficiency, particularly in resource-constrained settings. The model architecture and implementation framework will be open-sourced to facilitate the clinical translation of AI-assisted radiology solutions.",
+    "url": "http://arxiv.org/abs/2512.20344v1",
+    "date": "2025-12-23T13:26:13+00:00",
+    "authors": [
+      "Yaowei Bai",
+      "Ruiheng Zhang",
+      "Yu Lei",
+      "Xuhua Duan",
+      "Jingfeng Yao",
+      "Shuguang Ju",
+      "Chaoyang Wang",
+      "Wei Yao",
+      "Yiwan Guo",
+      "Guilin Zhang",
+      "Chao Wan",
+      "Qian Yuan",
+      "Lei Chen",
+      "Wenjuan Tang",
+      "Biqiang Zhu",
+      "Xinggang Wang",
+      "Tao Sun",
+      "Wei Zhou",
+      "Dacheng Tao",
+      "Yongchao Xu",
+      "Chuansheng Zheng",
+      "Huangxuan Zhao",
+      "Bo Du"
+    ]
+  },
+  {
+    "title": "Critical Hermitian matrix model with external source and Boussinesq hierarchy",
+    "summary": "We consider the random Hermitian matrix model of dimension $2n$, with external source, defined by the probability density function \\begin{equation*}\n  \\frac{1}{Z_{2n}} \\lvert \\det(M) \\rvert^\u03b1 e^{-2n\\mathrm{Tr} (V(M) - AM)}, \\quad V(x) = \\frac{x^4}{4} - t\\frac{x^2}{2}, \\end{equation*} where the external source $A$ has two eigenvalues $\\pm a$ of equal multiplicity. We investigate the limiting local statistics of the eigenvalues of $M$ around $0$ in certain critical regimes as $n \\to \\infty$. When the parameters $t$ and $a$ lie on a critical curve along which the limiting mean eigenvalue density vanishes as $|x|^{1/3}$, the double scaling limit of the correlation kernel is constructed from functions associated with the Boussinesq equation. This new limiting kernel reduces to the classical Pearcey kernel when $\u03b1= 0$. Furthermore, in the multi-critical case where the limiting mean eigenvalue density vanishes as $|x|^{5/3}$, the limiting kernel is built from the second member of the Boussinesq hierarchy. We derive the results by transforming the random matrix model into biorthogonal ensembles that are analogous to the Muttalib-Borodin ensemble, and then analyzing its asymptotic behavior via a vector Riemann-Hilbert problem.",
+    "url": "http://arxiv.org/abs/2512.20343v1",
+    "date": "2025-12-23T13:24:51+00:00",
+    "authors": [
+      "Dong Wang",
+      "Shuai-Xia Xu"
+    ]
+  },
+  {
+    "title": "The devil is in the details: Enhancing Video Virtual Try-On via Keyframe-Driven Details Injection",
+    "summary": "Although diffusion transformer (DiT)-based video virtual try-on (VVT) has made significant progress in synthesizing realistic videos, existing methods still struggle to capture fine-grained garment dynamics and preserve background integrity across video frames. They also incur high computational costs due to additional interaction modules introduced into DiTs, while the limited scale and quality of existing public datasets also restrict model generalization and effective training. To address these challenges, we propose a novel framework, KeyTailor, along with a large-scale, high-definition dataset, ViT-HD. The core idea of KeyTailor is a keyframe-driven details injection strategy, motivated by the fact that keyframes inherently contain both foreground dynamics and background consistency. Specifically, KeyTailor adopts an instruction-guided keyframe sampling strategy to filter informative frames from the input video. Subsequently,two tailored keyframe-driven modules, the garment details enhancement module and the collaborative background optimization module, are employed to distill garment dynamics into garment-related latents and to optimize the integrity of background latents, both guided by keyframes.These enriched details are then injected into standard DiT blocks together with pose, mask, and noise latents, enabling efficient and realistic try-on video synthesis. This design ensures consistency without explicitly modifying the DiT architecture, while simultaneously avoiding additional complexity. In addition, our dataset ViT-HD comprises 15, 070 high-quality video samples at a resolution of 810*1080, covering diverse garments. Extensive experiments demonstrate that KeyTailor outperforms state-of-the-art baselines in terms of garment fidelity and background integrity across both dynamic and static scenarios.",
+    "url": "http://arxiv.org/abs/2512.20340v1",
+    "date": "2025-12-23T13:15:31+00:00",
+    "authors": [
+      "Qingdong He",
+      "Xueqin Chen",
+      "Yanjie Pan",
+      "Peng Tang",
+      "Pengcheng Xu",
+      "Zhenye Gan",
+      "Chengjie Wang",
+      "Xiaobin Hu",
+      "Jiangning Zhang",
+      "Yabiao Wang"
+    ]
+  },
+  {
+    "title": "MMEDIT: A Unified Framework for Multi-Type Audio Editing via Audio Language Model",
+    "summary": "Text-guided audio editing aims to modify specific acoustic events while strictly preserving non-target content. Despite recent progress, existing approaches remain fundamentally limited. Training-free methods often suffer from signal degradation caused by diffusion inversion, while training-based methods, although achieving higher generation quality, are severely constrained by the scarcity of high-quality paired data and task formulations that cover only a narrow subset of editing operations. In addition, standard architectures typically decouple text and audio processing, limiting the ability to align instructions with specific acoustic contexts.\n  To address these challenges, we propose MMEdit, an audio-language-model-driven framework for unified audio editing. We systematically extend task definitions to cover a comprehensive range of editing operations, including addition, replacement, removal, reordering, and attribute modification. Furthermore, we design a scalable data synthesis pipeline to construct large-scale paired datasets with fine-grained event-level annotations. To capture complex editing semantics, we integrate a Qwen2-Audio encoder with an MMDiT-based generator, enabling precise cross-modal alignment and localized editing.\n  Experimental results demonstrate that our method achieves superior editing localization accuracy, robust instruction following, and high fidelity in non-edited regions.",
+    "url": "http://arxiv.org/abs/2512.20339v1",
+    "date": "2025-12-23T13:14:06+00:00",
+    "authors": [
+      "Ye Tao",
+      "Xuenan Xu",
+      "Wen Wu",
+      "Shuai Wang",
+      "Mengyue Wu",
+      "Chao Zhang"
+    ]
+  },
+  {
+    "title": "Branch Learning in MRI: More Data, More Models, More Training",
+    "summary": "We investigated two complementary strategies for multicontrast cardiac MR reconstruction: physics-consistent data-space augmentation (DualSpaceCMR) and parameter-efficient capacity scaling via VQPrompt and Moero. DualSpaceCMR couples image-level transforms with kspace noise and motion simulations while preserving forwardmodel consistency. VQPrompt adds a lightweight bottleneck prompt; Moero embeds a sparse mixture of experts within a deep unrolled network with histogram-based routing.\n  In the multivendor, multisite CMRxRecon25 benchmark, we evaluate fewshot and out-of-distribution generalization. On small datasets, k-space motion-plus-noise improves reconstruction; on the large benchmark it degrades performance, revealing sensitivity to augmentation ratio and schedule. VQPrompt produces modest and consistent gains with negligible memory overhead. Moero continues to improve after early plateaus and maintains baseline-like fewshot and out-of-distribution behavior despite mild overfitting, but sparse routing lowers PyTorch throughput and makes wall clock time the main bottleneck. These results motivate scale-aware augmentation and suggest prompt-based capacity scaling as a practical path, while efficiency improvements are crucial for sparse expert models.",
+    "url": "http://arxiv.org/abs/2512.20330v1",
+    "date": "2025-12-23T13:03:32+00:00",
+    "authors": [
+      "Yuyang Li",
+      "Yipin Deng",
+      "Zijian Zhou",
+      "Peng Hu"
+    ]
+  },
+  {
+    "title": "Macroscopic quantum states, quantum phase transition for $N$ three-level atoms in an optical cavity -- Gauge principle and non-Hermitian Hamiltonian",
+    "summary": "We study in this paper the quantum phase transition (QPT) from normal phase (NP) to superradiant phase (SP) for $N$ three-level atoms in a single-mode optical cavity for both Hermitian and non Hermitian Hamiltonians, where the $\u039e$-type three-level atom is described by spin-$1$ pseudo-spin operators. The long standing gauge-choice ambiguity of $\\mathbf{A\\cdot p}$ and $\\mathbf{d\\cdot E}$ called respectively the Coulomb and dipole gauges is resolved by the time-dependent gauge transformation on the Schr\u00f6dinger equation. Both $\\mathbf{A\\cdot p}$ and $\\mathbf{d\\cdot E}$ interactions are included in the unified gauge, which is truly gauge equivalent to the minimum coupling principle. The Coulomb and dipole interactions are just the special cases of unified gauge. Remarkably three interactions lead to the same results under the resonant condition of field-atom frequencies, while significant difference appears in red and blue detunings. The QPT is analyzed in terms of spin coherent-state variational method, which indicates the abrupt changes of energy spectrum, average photon number as well as the atomic population at the critical point of interaction constant. Crucially, we reveal the sensitive dependence on the initial optical-phase, which is particularly useful to test the validity of three gauges experimentally. The non-Hermitian atom-field interaction results in the exceptional point (EP), beyond which the semiclassical energy function becomes complex. However the energy spectrum of variational ground state is real in the absence of EP, and does not become complex. The superradiant state is unstable due to the non-Hermitian interaction induced photon-number loss. Thus only the NP exists in the non-Hermitian Dicke Model Hamiltonian.",
+    "url": "http://arxiv.org/abs/2512.20321v1",
+    "date": "2025-12-23T12:43:54+00:00",
+    "authors": [
+      "Ni Liu",
+      "Xinyu Jia",
+      "J. -Q. Liang"
+    ]
+  },
+  {
+    "title": "KAN-AFT: An Interpretable Nonlinear Survival Model Integrating Kolmogorov-Arnold Networks with Accelerated Failure Time Analysis",
+    "summary": "Survival analysis relies fundamentally on the semi-parametric Cox Proportional Hazards (CoxPH) model and the parametric Accelerated Failure Time (AFT) model. CoxPH assumes constant hazard ratios, often failing to capture real-world dynamics, while traditional AFT models are limited by rigid distributional assumptions. Although deep learning models like DeepAFT address these constraints by improving predictive accuracy and handling censoring, they inherit the significant challenge of black-box interpretability. The recent introduction of CoxKAN demonstrated the successful integration of Kolmogorov-Arnold Networks (KANs), a novel architecture that yields highly accurate and interpretable symbolic representations, within the CoxPH framework. Motivated by the interpretability gains of CoxKAN, we introduce KAN-AFT (Kolmogorov Arnold Network-based AFT), the first framework to apply KANs to the AFT model. KAN-AFT effectively models complex nonlinear relationships within the AFT framework. Our primary contributions include: (i) a principled AFT-KAN formulation, (ii) robust optimization strategies for right-censored observations (e.g., Buckley-James and IPCW), and (iii) an interpretability pipeline that converts the learned spline functions into closed-form symbolic equations for survival time. Empirical results on multiple datasets confirm that KAN-AFT achieves performance comparable to or better than DeepAFT, while uniquely providing transparent, symbolic models of the survival process.",
+    "url": "http://arxiv.org/abs/2512.20305v1",
+    "date": "2025-12-23T12:16:06+00:00",
+    "authors": [
+      "Mebin Jose",
+      "Jisha Francis",
+      "Sudheesh Kumar Kattumannil"
+    ]
+  },
+  {
+    "title": "KnowVal: A Knowledge-Augmented and Value-Guided Autonomous Driving System",
+    "summary": "Visual-language reasoning, driving knowledge, and value alignment are essential for advanced autonomous driving systems. However, existing approaches largely rely on data-driven learning, making it difficult to capture the complex logic underlying decision-making through imitation or limited reinforcement rewards. To address this, we propose KnowVal, a new autonomous driving system that enables visual-language reasoning through the synergistic integration of open-world perception and knowledge retrieval. Specifically, we construct a comprehensive driving knowledge graph that encodes traffic laws, defensive driving principles, and ethical norms, complemented by an efficient LLM-based retrieval mechanism tailored for driving scenarios. Furthermore, we develop a human-preference dataset and train a Value Model to guide interpretable, value-aligned trajectory assessment. Experimental results show that our method substantially improves planning performance while remaining compatible with existing architectures. Notably, KnowVal achieves the lowest collision rate on nuScenes and state-of-the-art results on Bench2Drive.",
+    "url": "http://arxiv.org/abs/2512.20299v1",
+    "date": "2025-12-23T12:08:00+00:00",
+    "authors": [
+      "Zhongyu Xia",
+      "Wenhao Chen",
+      "Yongtao Wang",
+      "Ming-Hsuan Yang"
+    ]
+  },
+  {
+    "title": "Mixture-of-Experts with Gradient Conflict-Driven Subspace Topology Pruning for Emergent Modularity",
+    "summary": "Mixture-of-Experts (MoE) architectures achieve parameter efficiency through conditional computation, yet contemporary designs suffer from two fundamental limitations: structural parameter isolation that causes catastrophic forgetting, and instruction-overfitting that degrades performance in instruction-free scenarios. We propose CDSP-MoE (Conflict-Driven Subspace Pruning MoE), a framework that addresses these issues through a paradigm shift from isolated expert containers to dynamic expert instantiation within a shared physical subspace. Grounded in the Universal Weight Subspace Hypothesis, CDSP-MoE maintains a super-complete parameter backbone where logical experts are carved out via learnable topology masks. Unlike prior work that uses gradient conflict for token reassignment or optimization surgery, we leverage it as a structural supervisory signal: a Lagged Gradient Game penalizes interfering connections in the shared manifold, enabling the topology to spontaneously prune conflicting pathways and evolve interpretable modular structures. Experimental results demonstrate that CDSP-MoE achieves robust content-driven routing without human-defined task labels, maintaining semantic specialization even under strict blind inference protocols where explicit instructions are absent. Code is available at: https://github.com/konodiodaaaaa1/Conflict-Driven-Subspace-Pruning-Mixture-of-Experts",
+    "url": "http://arxiv.org/abs/2512.20291v1",
+    "date": "2025-12-23T12:00:10+00:00",
+    "authors": [
+      "Yuxing Gan",
+      "Ziyu Lei"
+    ]
+  },
+  {
+    "title": "UbiQVision: Quantifying Uncertainty in XAI for Image Recognition",
+    "summary": "Recent advances in deep learning have led to its widespread adoption across diverse domains, including medical imaging. This progress is driven by increasingly sophisticated model architectures, such as ResNets, Vision Transformers, and Hybrid Convolutional Neural Networks, that offer enhanced performance at the cost of greater complexity. This complexity often compromises model explainability and interpretability. SHAP has emerged as a prominent method for providing interpretable visualizations that aid domain experts in understanding model predictions. However, SHAP explanations can be unstable and unreliable in the presence of epistemic and aleatoric uncertainty. In this study, we address this challenge by using Dirichlet posterior sampling and Dempster-Shafer theory to quantify the uncertainty that arises from these unstable explanations in medical imaging applications. The framework uses a belief, plausible, and fusion map approach alongside statistical quantitative analysis to produce quantification of uncertainty in SHAP. Furthermore, we evaluated our framework on three medical imaging datasets with varying class distributions, image qualities, and modality types which introduces noise due to varying image resolutions and modality-specific aspect covering the examples from pathology, ophthalmology, and radiology, introducing significant epistemic uncertainty.",
+    "url": "http://arxiv.org/abs/2512.20288v1",
+    "date": "2025-12-23T11:57:34+00:00",
+    "authors": [
+      "Akshat Dubey",
+      "Aleksandar An\u017eel",
+      "Bahar \u0130lgen",
+      "Georges Hattab"
+    ]
+  },
+  {
+    "title": "Synthesizing Procedural Memory: Challenges and Architectures in Automated Workflow Generation",
+    "summary": "While CodeMem establishes executable code as the optimal representation for agentic procedural memory, the mechanism for autonomously synthesizing this memory from a blank slate remains underexplored. This paper operationalizes the transition of Large Language Models from passive tool-users to active workflow architects. Through a high-fidelity case study of a cross-service orchestration task involving Outlook and OneDrive, we identify and address four structural bottlenecks in automated skill generation: the Discovery Gap involving navigation of large tool registries, the Verification Gap regarding grounding tool response structures, the Decomposition Gap which replaces inefficient search with Linear State Anchoring, and the Scaling Gap focused on concurrency and persistence. We demonstrate that by enforcing a scientific methodology of hypothesize, probe, and code, agents can autonomously write robust, production-grade code skills.",
+    "url": "http://arxiv.org/abs/2512.20278v1",
+    "date": "2025-12-23T11:33:32+00:00",
+    "authors": [
+      "Nishant Gaurav",
+      "Adit Akarsh",
+      "Ankit Ranjan",
+      "Manoj Bajaj"
+    ]
+  },
+  {
+    "title": "Graph-Symbolic Policy Enforcement and Control (G-SPEC): A Neuro-Symbolic Framework for Safe Agentic AI in 5G Autonomous Networks",
+    "summary": "As networks evolve toward 5G Standalone and 6G, operators face orchestration challenges that exceed the limits of static automation and Deep Reinforcement Learning. Although Large Language Model (LLM) agents offer a path toward intent-based networking, they introduce stochastic risks, including topology hallucinations and policy non-compliance. To mitigate this, we propose Graph-Symbolic Policy Enforcement and Control (G-SPEC), a neuro-symbolic framework that constrains probabilistic planning with deterministic verification. The architecture relies on a Governance Triad - a telecom-adapted agent (TSLAM-4B), a Network Knowledge Graph (NKG), and SHACL constraints. We evaluated G-SPEC on a simulated 450-node 5G Core, achieving zero safety violations and a 94.1% remediation success rate, significantly outperforming the 82.4% baseline. Ablation analysis indicates that NKG validation drives the majority of safety gains (68%), followed by SHACL policies (24%). Scalability tests on topologies ranging from 10K to 100K nodes demonstrate that validation latency scales as $O(k^{1.2})$ where $k$ is subgraph size. With a processing overhead of 142ms, G-SPEC is viable for SMO-layer operations.",
+    "url": "http://arxiv.org/abs/2512.20275v1",
+    "date": "2025-12-23T11:27:17+00:00",
+    "authors": [
+      "Divya Vijay",
+      "Vignesh Ethiraj"
+    ]
+  },
+  {
+    "title": "HGAN-SDEs: Learning Neural Stochastic Differential Equations with Hermite-Guided Adversarial Training",
+    "summary": "Neural Stochastic Differential Equations (Neural SDEs) provide a principled framework for modeling continuous-time stochastic processes and have been widely adopted in fields ranging from physics to finance. Recent advances suggest that Generative Adversarial Networks (GANs) offer a promising solution to learning the complex path distributions induced by SDEs. However, a critical bottleneck lies in designing a discriminator that faithfully captures temporal dependencies while remaining computationally efficient. Prior works have explored Neural Controlled Differential Equations (CDEs) as discriminators due to their ability to model continuous-time dynamics, but such architectures suffer from high computational costs and exacerbate the instability of adversarial training. To address these limitations, we introduce HGAN-SDEs, a novel GAN-based framework that leverages Neural Hermite functions to construct a structured and efficient discriminator. Hermite functions provide an expressive yet lightweight basis for approximating path-level dynamics, enabling both reduced runtime complexity and improved training stability. We establish the universal approximation property of our framework for a broad class of SDE-driven distributions and theoretically characterize its convergence behavior. Extensive empirical evaluations on synthetic and real-world systems demonstrate that HGAN-SDEs achieve superior sample quality and learning efficiency compared to existing generative models for SDEs",
+    "url": "http://arxiv.org/abs/2512.20272v1",
+    "date": "2025-12-23T11:25:22+00:00",
+    "authors": [
+      "Yuanjian Xu",
+      "Yuan Shuai",
+      "Jianing Hao",
+      "Guang Zhang"
+    ]
+  },
+  {
+    "title": "Optimality-Informed Neural Networks for Solving Parametric Optimization Problems",
+    "summary": "Many engineering tasks require solving families of nonlinear constrained optimization problems, parametrized in setting-specific variables. This is computationally demanding, particularly, if solutions have to be computed across strongly varying parameter values, e.g., in real-time control or for model-based design. Thus, we propose to learn the mapping from parameters to the primal optimal solutions and to their corresponding duals using neural networks, giving a dense estimation in contrast to gridded approaches. Our approach, Optimality-informed Neural Networks (OptINNs), combines (i) a KKT-residual loss that penalizes violations of the first-order optimality conditions under standard constraint qualifications assumptions, and (ii) problem-specific output activations that enforce simple inequality constraints (e.g., box-type/positivity) by construction. This design reduces data requirements, allows the prediction of dual variables, and improves feasibility and closeness to optimality compared to penalty-only training. Taking quadratic penalties as a baseline, since this approach has been previously proposed for the considered problem class in literature, our method simplifies hyperparameter tuning and attains tighter adherence to optimality conditions. We evaluate OptINNs on different nonlinear optimization problems ranging from low to high dimensions. On small problems, OptINNs match a quadratic-penalty baseline in primal accuracy while additionally predicting dual variables with low error. On larger problems, OptINNs achieve lower constraint violations and lower primal error compared to neural networks based on the quadratic-penalty method. These results suggest that embedding feasibility and optimality into the network architecture and loss can make learning-based surrogates more accurate, feasible, and data-efficient for parametric optimization.",
+    "url": "http://arxiv.org/abs/2512.20270v1",
+    "date": "2025-12-23T11:24:45+00:00",
+    "authors": [
+      "Matthias K. Hoffmann",
+      "Amine Othmane",
+      "Kathrin Fla\u00dfkamp"
+    ]
+  },
+  {
+    "title": "The Isogeometric Fast Fourier-based Diagonalization method",
+    "summary": "The construction of robust solvers for linear systems obtained from the discretization of partial differential equations using Isogeometric Analysis is challenging since the condition number of the system matrix not only grows with the reciprocal square of the grid size (for second order problems), but also exponentially with the spline degree. The Fast Diagonalization method allows the construction of a preconditioner that is robust both in grid size and spline degree. Although this method is efficient in practice, its computational complexity is superlinear in the number of degrees of freedom. In this work, we construct a variant of the Fast Diagonalization method that can exploit the Fast Fourier Transformation. Note that, because of boundary effects, a Fourier Transformation cannot diagonalize the overall problem. We circumvent this issue using a stable splitting of the spline space. The resulting preconditioner is still robust with respect to the grid size and spline degree and can be realized with a computational complexity that grows almost linearly with the number of degrees of freedom.",
+    "url": "http://arxiv.org/abs/2512.20269v1",
+    "date": "2025-12-23T11:24:32+00:00",
+    "authors": [
+      "Monica Montardini",
+      "Stefan Takacs",
+      "Mattia Tani"
+    ]
+  },
+  {
+    "title": "DeepONet-accelerated Bayesian inversion for moving boundary problems",
+    "summary": "This work demonstrates that neural operator learning provides a powerful and flexible framework for building fast, accurate emulators of moving boundary systems, enabling their integration into digital twin platforms. To this end, a Deep Operator Network (DeepONet) architecture is employed to construct an efficient surrogate model for moving boundary problems in single-phase Darcy flow through porous media. The surrogate enables rapid and accurate approximation of complex flow dynamics and is coupled with an Ensemble Kalman Inversion (EKI) algorithm to solve Bayesian inverse problems.\n  The proposed inversion framework is demonstrated by estimating the permeability and porosity of fibre reinforcements for composite materials manufactured via the Resin Transfer Moulding (RTM) process. Using both synthetic and experimental in-process data, the DeepONet surrogate accelerates inversion by several orders of magnitude compared with full-model EKI. This computational efficiency enables real-time, accurate, high-resolution estimation of local variations in permeability, porosity, and other parameters, thereby supporting effective monitoring and control of RTM processes, as well as other applications involving moving boundary flows. Unlike prior approaches for RTM inversion that learn mesh-dependent mappings, the proposed neural operator generalises across spatial and temporal domains, enabling evaluation at arbitrary sensor configurations without retraining, and represents a significant step toward practical industrial deployment of digital twins.",
+    "url": "http://arxiv.org/abs/2512.20268v1",
+    "date": "2025-12-23T11:22:26+00:00",
+    "authors": [
+      "Marco A. Iglesias",
+      "Michael. E. Causon",
+      "Mikhail Y. Matveev",
+      "Andreas Endruweit",
+      "Michael . V. Tretyakov"
+    ]
+  },
+  {
+    "title": "LADLE-MM: Limited Annotation based Detector with Learned Ensembles for Multimodal Misinformation",
+    "summary": "With the rise of easily accessible tools for generating and manipulating multimedia content, realistic synthetic alterations to digital media have become a widespread threat, often involving manipulations across multiple modalities simultaneously. Recently, such techniques have been increasingly employed to distort narratives of important events and to spread misinformation on social media, prompting the development of misinformation detectors. In the context of misinformation conveyed through image-text pairs, several detection methods have been proposed. However, these approaches typically rely on computationally intensive architectures or require large amounts of annotated data. In this work we introduce LADLE-MM: Limited Annotation based Detector with Learned Ensembles for Multimodal Misinformation, a model-soup initialized multimodal misinformation detector designed to operate under a limited annotation setup and constrained training resources. LADLE-MM is composed of two unimodal branches and a third multimodal one that enhances image and text representations with additional multimodal embeddings extracted from BLIP, serving as fixed reference space. Despite using 60.3% fewer trainable parameters than previous state-of-the-art models, LADLE-MM achieves competitive performance on both binary and multi-label classification tasks on the DGM4 benchmark, outperforming existing methods when trained without grounding annotations. Moreover, when evaluated on the VERITE dataset, LADLE-MM outperforms current state-of-the-art approaches that utilize more complex architectures involving Large Vision-Language-Models, demonstrating the effective generalization ability in an open-set setting and strong robustness to unimodal bias.",
+    "url": "http://arxiv.org/abs/2512.20257v1",
+    "date": "2025-12-23T11:14:58+00:00",
+    "authors": [
+      "Daniele Cardullo",
+      "Simone Teglia",
+      "Irene Amerini"
+    ]
+  },
+  {
+    "title": "Degradation-Aware Metric Prompting for Hyperspectral Image Restoration",
+    "summary": "Unified hyperspectral image (HSI) restoration aims to recover various degraded HSIs using a single model, offering great practical value. However, existing methods often depend on explicit degradation priors (e.g., degradation labels) as prompts to guide restoration, which are difficult to obtain due to complex and mixed degradations in real-world scenarios. To address this challenge, we propose a Degradation-Aware Metric Prompting (DAMP) framework. Instead of relying on predefined degradation priors, we design spatial-spectral degradation metrics to continuously quantify multi-dimensional degradations, serving as Degradation Prompts (DP). These DP enable the model to capture cross-task similarities in degradation distributions and enhance shared feature learning. Furthermore, we introduce a Spatial-Spectral Adaptive Module (SSAM) that dynamically modulates spatial and spectral feature extraction through learnable parameters. By integrating SSAM as experts within a Mixture-of-Experts architecture, and using DP as the gating router, the framework enables adaptive, efficient, and robust restoration under diverse, mixed, or unseen degradations. Extensive experiments on natural and remote sensing HSI datasets show that DAMP achieves state-of-the-art performance and demonstrates exceptional generalization capability. Code is publicly available at https://github.com/MiliLab/DAMP.",
+    "url": "http://arxiv.org/abs/2512.20251v1",
+    "date": "2025-12-23T11:05:36+00:00",
+    "authors": [
+      "Binfeng Wang",
+      "Di Wang",
+      "Haonan Guo",
+      "Ying Fu",
+      "Jing Zhang"
+    ]
+  },
+  {
+    "title": "Memory as Resonance: A Biomimetic Architecture for Infinite Context Memory on Ergodic Phonetic Manifolds",
+    "summary": "The memory of contemporary Large Language Models is bound by a physical paradox: as they learn, they fill up. The linear accumulation (O(N)) of Key-Value states treats context as a warehouse of static artifacts, eventually forcing a destructive choice between amnesia and latency. We challenge this discrete orthodoxy, proposing that long-term memory is not the storage of items, but the persistence of a trajectory. We introduce Phonetic Trajectory Memory (PTM), a neuro-symbolic architecture that encodes language not as a sequence of tensors, but as a continuous path on an ergodic manifold governed by irrational rotation matrices. By decoupling the navigation (an invariant O(1) geometric signal) from the reconstruction (a probabilistic generative act), PTM achieves a compression magnitude of greater than 3,000x relative to dense caches. We demonstrate that retrieval becomes a process of resonance: the phonetic trace stabilizes the model against hallucination via \"Signal Consensus\" mechanism, securing up to approximately 92% factual accuracy. While this aggressive abstraction alters generative texture, it unlocks immediate access latency (approximately 34ms) independent of depth. Our results suggest that infinite context does not require infinite silicon; it requires treating memory not as data to be stored, but as a reconstructive process acting on a conserved, undying physical signal.",
+    "url": "http://arxiv.org/abs/2512.20245v1",
+    "date": "2025-12-23T10:55:32+00:00",
+    "authors": [
+      "Tarik Houichime",
+      "Abdelghani Souhar",
+      "Younes El Amrani"
+    ]
+  },
+  {
+    "title": "Post-Quantum Cryptography in the 5G Core",
+    "summary": "In this work, the conventional cryptographic algorithms used in the 5G Core are replaced with post-quantum alternatives and the practical impact of this transition is evaluated. Using a simulation environment, we model the registration and deregistration of varying numbers of user equipments (UEs) and measure the resulting effects on bandwidth consumption and latency.\n  Our results show that the deployment of post-quantum cryptographic algorithms has a measurable effect on performance, but that this effect is small, and perhaps more crucially, that the extra overhead needed in terms of computation and bandwidth does not have any substantial impact on the usability of the network and the efficiency of its network functions.\n  Overall the experimental results in this work corroborate earlier research: the 5G Core is technically able to support post-quantum cryptography without any inherent issues connected to the increased computational overhead or larger message size.",
+    "url": "http://arxiv.org/abs/2512.20243v1",
+    "date": "2025-12-23T10:53:32+00:00",
+    "authors": [
+      "Thomas Attema",
+      "Bor de Kock",
+      "Sandesh Manganahalli Jayaprakash",
+      "Dimitrios Schoinianakis",
+      "Thom Sijpesteijn",
+      "Rintse van de Vlasakker"
+    ]
+  },
+  {
+    "title": "High-quality and field resilient microwave resonators on Ge/SiGe quantum well heterostructures",
+    "summary": "Superconducting resonators integrated with Ge quantum wells (QWs) offer a promising platform for hybrid quantum devices. Yet, in the most common heterostructure architectures, they have so far been limited by sizable photon losses. Here, we report the fabrication and characterization of microwave resonators patterned in the Al thin film of an in-situ grown superconductor/semiconductor hybrid heterostructure (HS). The semiconductor part of this hybrid HS is grown on a commercial Ge substrate. We consistently achieve internal quality factors $Q_i>1000$, surpassing previous results on Ge QW heterostructures grown using the concept of a virtual Ge substrate on Si substrates. We reach $Q_i \\approx 49000$ at single-photon occupation and a plateau of $Q_i \\approx 20000$ at sub-one photon, an order of magnitude larger than any previously reported value of resonators on Ge QW structures at low power. We further characterize the thin Al film forming the resonator, extracting its kinetic inductance and superconducting gap, and studying its magnetic field dependence. Notably, the resonance remains well-defined up to in-plane magnetic fields of 850 mT. A hysteresis emerges in the out-of-plane magnetic field dependence, for both the resonance frequency and the quality factor, indicating an interesting interplay between vortex- and quasiparticle loss mechanisms.",
+    "url": "http://arxiv.org/abs/2512.20238v1",
+    "date": "2025-12-23T10:49:59+00:00",
+    "authors": [
+      "Luigi Ruggiero",
+      "Carlo Ciacca",
+      "Pauline Drexler",
+      "Vera Jo Weibel",
+      "Christian Olsen",
+      "Christian Sch\u00f6nenberger",
+      "Dominique Bougeard",
+      "Andrea Hofmann"
+    ]
+  },
+  {
+    "title": "Benchmarking Universal Interatomic Potentials on Elemental Systems",
+    "summary": "The rapid emergence of universal Machine Learning Interatomic Potentials (uMLIPs) has transformed materials modeling. However, a comprehensive understanding of their generalization behavior across configurational space remains an open challenge. In this work, we introduce a benchmarking framework to evaluate both the equilibrium and far-from-equilibrium performance of state-of-the-art uMLIPs, including three MACE-based models, MatterSim, and PET-MAD. Our assessment utilizes Equation-of-State (EOS) tests to evaluate near-equilibrium properties, such as bulk moduli and equilibrium volumes, alongside extensive Minima Hopping (MH) structural searches to probe the global Potential Energy Surface (PES). Here, we assess universality within the fundamental limit of unary (elemental) systems, which serve as a necessary baseline for broader chemical generalization and provide a framework that can be systematically extended to multicomponent materials. We find that while most models exhibit high accuracy in reproducing equilibrium volumes for transition metals, significant performance gaps emerge in alkali and alkaline earth metal groups. Crucially, our MH results reveal a decoupling between search efficiency and structural fidelity, highlighting that smoother learned PESs do not necessarily yield more accurate energetic landscapes.",
+    "url": "http://arxiv.org/abs/2512.20230v1",
+    "date": "2025-12-23T10:41:11+00:00",
+    "authors": [
+      "Hossein Tahmasbi",
+      "Andreas Kn\u00fcpfer",
+      "Thomas D. K\u00fchne",
+      "Hossein Mirhosseini"
+    ]
+  },
+  {
+    "title": "Finite-Time Control Based on Differential Flatness for Wheeled Mobile Robots with Experimental Validation",
+    "summary": "A robust tracking control strategy is designed to empower wheeled mobile robots (WMRs) to track predetermined routes while operating in diverse fields and encountering disturbances like strong winds or uneven path conditions, which affect tracking performance. Ensuring the applicability of this tracking method in real-world scenarios is essential. To accomplish this, the WMR model is initially transformed into a linear canonical form by leveraging the differential flatness of its kinematic model, facilitating controller design. Subsequently, a novel integral nonlinear hyperplane-based sliding mode control (INH-SMC) technique is proposed for WMR under disturbances. The stability of the technique is analyzed and verified. Finally, its practical viability is demonstrated through a comparative real-world indoor experiment on a TurtleBot3 WMR subjected to disturbances, confirming the feasibility and efficacy of the proposed approach.",
+    "url": "http://arxiv.org/abs/2512.20229v1",
+    "date": "2025-12-23T10:41:04+00:00",
+    "authors": [
+      "Imtiaz Ur Rehman",
+      "Moussa Labbadi",
+      "Amine Abadi",
+      "Lew Lew Yan Voon"
+    ]
+  },
+  {
+    "title": "Robust safety design for strict-feedback nonlinear systems via observer-based linear time varying feedback",
+    "summary": "This paper develops a robust safety-critical control method for nonlinear strictfeedback systems with mismatched disturbances. Using a state transformation and a linear time-varying disturbance observer, the system is converted into a form that enables safe control design. The approach ensures forward invariance of the safety set and also applies to disturbancefree systems. Safety is proven for all cases, and a numerical example illustrates the results.",
+    "url": "http://arxiv.org/abs/2512.20226v1",
+    "date": "2025-12-23T10:35:22+00:00",
+    "authors": [
+      "Imtiaz Ur Rehman",
+      "Moussa Labbadi",
+      "Amine Abadi",
+      "Lew Lew Yan Voon"
+    ]
+  },
+  {
+    "title": "LiteFusion: Taming 3D Object Detectors from Vision-Based to Multi-Modal with Minimal Adaptation",
+    "summary": "3D object detection is fundamental for safe and robust intelligent transportation systems. Current multi-modal 3D object detectors often rely on complex architectures and training strategies to achieve higher detection accuracy. However, these methods heavily rely on the LiDAR sensor so that they suffer from large performance drops when LiDAR is absent, which compromises the robustness and safety of autonomous systems in practical scenarios. Moreover, existing multi-modal detectors face difficulties in deployment on diverse hardware platforms, such as NPUs and FPGAs, due to their reliance on 3D sparse convolution operators, which are primarily optimized for NVIDIA GPUs. To address these challenges, we reconsider the role of LiDAR in the camera-LiDAR fusion paradigm and introduce a novel multi-modal 3D detector, LiteFusion. Instead of treating LiDAR point clouds as an independent modality with a separate feature extraction backbone, LiteFusion utilizes LiDAR data as a complementary source of geometric information to enhance camera-based detection. This straightforward approach completely eliminates the reliance on a 3D backbone, making the method highly deployment-friendly. Specifically, LiteFusion integrates complementary features from LiDAR points into image features within a quaternion space, where the orthogonal constraints are well-preserved during network training. This helps model domain-specific relations across modalities, yielding a compact cross-modal embedding. Experiments on the nuScenes dataset show that LiteFusion improves the baseline vision-based detector by +20.4% mAP and +19.7% NDS with a minimal increase in parameters (1.1%) without using dedicated LiDAR encoders. Notably, even in the absence of LiDAR input, LiteFusion maintains strong results , highlighting its favorable robustness and effectiveness across diverse fusion paradigms and deployment scenarios.",
+    "url": "http://arxiv.org/abs/2512.20217v1",
+    "date": "2025-12-23T10:16:33+00:00",
+    "authors": [
+      "Xiangxuan Ren",
+      "Zhongdao Wang",
+      "Pin Tang",
+      "Guoqing Wang",
+      "Jilai Zheng",
+      "Chao Ma"
+    ]
+  },
+  {
+    "title": "Quantitative Financial Modeling for Sri Lankan Markets: Approach Combining NLP, Clustering and Time-Series Forecasting",
+    "summary": "This research introduces a novel quantitative methodology tailored for quantitative finance applications, enabling banks, stockbrokers, and investors to predict economic regimes and market signals in emerging markets, specifically Sri Lankan stock indices (S&P SL20 and ASPI) by integrating Environmental, Social, and Governance (ESG) sentiment analysis with macroeconomic indicators and advanced time-series forecasting. Designed to leverage quantitative techniques for enhanced risk assessment, portfolio optimization, and trading strategies in volatile environments, the architecture employs FinBERT, a transformer-based NLP model, to extract sentiment from ESG texts, followed by unsupervised clustering (UMAP/HDBSCAN) to identify 5 latent ESG regimes, validated via PCA. These regimes are mapped to economic conditions using a dense neural network and gradient boosting classifier, achieving 84.04% training and 82.0% validation accuracy. Concurrently, time-series models (SRNN, MLP, LSTM, GRU) forecast daily closing prices, with GRU attaining an R-squared of 0.801 and LSTM delivering 52.78% directional accuracy on intraday data. A strong correlation between S&P SL20 and S&P 500, observed through moving average and volatility trend plots, further bolsters forecasting precision. A rule-based fusion logic merges ESG and time-series outputs for final market signals. By addressing literature gaps that overlook emerging markets and holistic integration, this quant-driven framework combines global correlations and local sentiment analysis to offer scalable, accurate tools for quantitative finance professionals navigating complex markets like Sri Lanka.",
+    "url": "http://arxiv.org/abs/2512.20216v1",
+    "date": "2025-12-23T10:16:00+00:00",
+    "authors": [
+      "Linuk Perera"
+    ]
+  },
+  {
+    "title": "Aliasing-Free Neural Audio Synthesis",
+    "summary": "Neural vocoders and codecs reconstruct waveforms from acoustic representations, which directly impact the audio quality. Among existing methods, upsampling-based time-domain models are superior in both inference speed and synthesis quality, achieving state-of-the-art performance. Still, despite their success in producing perceptually natural sound, their synthesis fidelity remains limited due to the aliasing artifacts brought by the inadequately designed model architectures. In particular, the unconstrained nonlinear activation generates an infinite number of harmonics that exceed the Nyquist frequency, resulting in ``folded-back'' aliasing artifacts. The widely used upsampling layer, ConvTranspose, copies the mirrored low-frequency parts to fill the empty high-frequency region, resulting in ``mirrored'' aliasing artifacts. Meanwhile, the combination of its inherent periodicity and the mirrored DC bias also brings ``tonal artifact,'' resulting in constant-frequency ringing. This paper aims to solve these issues from a signal processing perspective. Specifically, we apply oversampling and anti-derivative anti-aliasing to the activation function to obtain its anti-aliased form, and replace the problematic ConvTranspose layer with resampling to avoid the ``tonal artifact'' and eliminate aliased components. Based on our proposed anti-aliased modules, we introduce Pupu-Vocoder and Pupu-Codec, and release high-quality pre-trained checkpoints to facilitate audio generation research. We build a test signal benchmark to illustrate the effectiveness of the anti-aliased modules, and conduct experiments on speech, singing voice, music, and audio to validate our proposed models. Experimental results confirm that our lightweight Pupu-Vocoder and Pupu-Codec models can easily outperform existing systems on singing voice, music, and audio, while achieving comparable performance on speech.",
+    "url": "http://arxiv.org/abs/2512.20211v1",
+    "date": "2025-12-23T10:04:48+00:00",
+    "authors": [
+      "Yicheng Gu",
+      "Junan Zhang",
+      "Chaoren Wang",
+      "Jerry Li",
+      "Zhizheng Wu",
+      "Lauri Juvela"
+    ]
+  },
+  {
+    "title": "Designing Spatial Architectures for Sparse Attention: STAR Accelerator via Cross-Stage Tiling",
+    "summary": "Large language models (LLMs) rely on self-attention for contextual understanding, demanding high-throughput inference and large-scale token parallelism (LTPP). Existing dynamic sparsity accelerators falter under LTPP scenarios due to stage-isolated optimizations. Revisiting the end-to-end sparsity acceleration flow, we identify an overlooked opportunity: cross-stage coordination can substantially reduce redundant computation and memory access. We propose STAR, a cross-stage compute- and memory-efficient algorithm-hardware co-design tailored for Transformer inference under LTPP. STAR introduces a leading-zero-based sparsity prediction using log-domain add-only operations to minimize prediction overhead. It further employs distributed sorting and a sorted updating FlashAttention mechanism, guided by a coordinated tiling strategy that enables fine-grained stage interaction for improved memory efficiency and latency. These optimizations are supported by a dedicated STAR accelerator architecture, achieving up to 9.2$\\times$ speedup and 71.2$\\times$ energy efficiency over A100, and surpassing SOTA accelerators by up to 16.1$\\times$ energy and 27.1$\\times$ area efficiency gains. Further, we deploy STAR onto a multi-core spatial architecture, optimizing dataflow and execution orchestration for ultra-long sequence processing. Architectural evaluation shows that, compared to the baseline design, Spatial-STAR achieves a 20.1$\\times$ throughput improvement.",
+    "url": "http://arxiv.org/abs/2512.20198v1",
+    "date": "2025-12-23T09:43:32+00:00",
+    "authors": [
+      "Huizheng Wang",
+      "Taiquan Wei",
+      "Hongbin Wang",
+      "Zichuan Wang",
+      "Xinru Tang",
+      "Zhiheng Yue",
+      "Shaojun Wei",
+      "Yang Hu",
+      "Shouyi Yin"
+    ]
+  },
+  {
+    "title": "Generative Latent Coding for Ultra-Low Bitrate Image Compression",
+    "summary": "Most existing image compression approaches perform transform coding in the pixel space to reduce its spatial redundancy. However, they encounter difficulties in achieving both high-realism and high-fidelity at low bitrate, as the pixel-space distortion may not align with human perception. To address this issue, we introduce a Generative Latent Coding (GLC) architecture, which performs transform coding in the latent space of a generative vector-quantized variational auto-encoder (VQ-VAE), instead of in the pixel space. The generative latent space is characterized by greater sparsity, richer semantic and better alignment with human perception, rendering it advantageous for achieving high-realism and high-fidelity compression. Additionally, we introduce a categorical hyper module to reduce the bit cost of hyper-information, and a code-prediction-based supervision to enhance the semantic consistency. Experiments demonstrate that our GLC maintains high visual quality with less than 0.04 bpp on natural images and less than 0.01 bpp on facial images. On the CLIC2020 test set, we achieve the same FID as MS-ILLM with 45% fewer bits. Furthermore, the powerful generative latent space enables various applications built on our GLC pipeline, such as image restoration and style transfer. The code is available at https://github.com/jzyustc/GLC.",
+    "url": "http://arxiv.org/abs/2512.20194v1",
+    "date": "2025-12-23T09:35:40+00:00",
+    "authors": [
+      "Zhaoyang Jia",
+      "Jiahao Li",
+      "Bin Li",
+      "Houqiang Li",
+      "Yan Lu"
+    ]
+  },
+  {
+    "title": "Edge-Served Congestion Control for Wireless Multipath Transmission with a Transformer Agent",
+    "summary": "Multipath TCP is widely adopted to enhance connection quality-of-service by leveraging multiple network pathways on modern devices. However, the evolution of its core congestion control is hindered by the OS kernel, whose monolithic design imposes high development overhead and lacks the resource flexibility required for data-driven methods. Furthermore, inherent noise in network statistics induces a partial observability problem, which can mislead data-driven methods like Deep Reinforcement Learning. To bridge this gap, we propose Jazz, a system that re-architects multipath congestion control through a decoupled architecture that separates the decision-making ``brain'' from the in-kernel datapath, enabling it to operate on an external (edge) entity. At its core, Jazz employs a Transformer-based agent that processes sequences of historical observations to overcome the partial observability of single-step reinforcement learning. This allows it to learn and master fluctuating link conditions and intricate cross-path dependencies. Tested on a dual-band (5GHz/6GHz) Wi-Fi testbed, our implementation improves bandwidth efficiency by at least 2.85\\% over conventional methods and maintains 96.2\\% performance under 1\\% packet loss, validating this design as a practical blueprint for agile network intelligence.",
+    "url": "http://arxiv.org/abs/2512.20186v1",
+    "date": "2025-12-23T09:22:19+00:00",
+    "authors": [
+      "Liang Wang"
+    ]
+  },
+  {
+    "title": "SHIRO: Near-Optimal Communication Strategies for Distributed Sparse Matrix Multiplication",
+    "summary": "Distributed Sparse Matrix-Matrix Multiplication (SpMM) is a fundamental operation in numerous high-performance computing and deep learning applications. The major performance bottleneck in distributed SpMM lies in the substantial communication overhead, which limits both performance and scalability. In this paper, we identify and analyze sources of inefficient communication in existing distributed SpMM implementations at two levels and address these inefficiencies by proposing: (1) a fine-grained, sparsity-aware communication strategy that reduces communication overhead by exploiting the sparsity pattern of the sparse matrix, and (2) a hierarchical communication strategy that integrates the sparsity-aware strategy with the common two-tier network architectures in GPU-accelerated systems, to reduce redundant communication across slow network links. We implement these optimizations in a comprehensive distributed SpMM framework, \\method{}. Extensive evaluations on real-world datasets show that our framework demonstrates strong scalability up to 128 GPUs, achieving geometric mean speedups of 221.5$\\times$, 56.0$\\times$, 23.4$\\times$, and 8.8$\\times$ over four state-of-the-art baselines (CAGNET, SPA, BCL, and CoLa, respectively) at this scale.",
+    "url": "http://arxiv.org/abs/2512.20178v1",
+    "date": "2025-12-23T09:16:52+00:00",
+    "authors": [
+      "Chen Zhuang",
+      "Lingqi Zhang",
+      "Benjamin Brock",
+      "Du Wu",
+      "Peng Chen",
+      "Toshio Endo",
+      "Satoshi Matsuoka",
+      "Mohamed Wahib"
+    ]
+  },
+  {
+    "title": "Optimistic TEE-Rollups: A Hybrid Architecture for Scalable and Verifiable Generative AI Inference on Blockchain",
+    "summary": "The rapid integration of Large Language Models (LLMs) into decentralized physical infrastructure networks (DePIN) is currently bottlenecked by the Verifiability Trilemma, which posits that a decentralized inference system cannot simultaneously achieve high computational integrity, low latency, and low cost. Existing cryptographic solutions, such as Zero-Knowledge Machine Learning (ZKML), suffer from superlinear proving overheads (O(k NlogN)) that render them infeasible for billionparameter models. Conversely, optimistic approaches (opML) impose prohibitive dispute windows, preventing real-time interactivity, while recent \"Proof of Quality\" (PoQ) paradigms sacrifice cryptographic integrity for subjective semantic evaluation, leaving networks vulnerable to model downgrade attacks and reward hacking. In this paper, we introduce Optimistic TEE-Rollups (OTR), a hybrid verification protocol that harmonizes these constraints. OTR leverages NVIDIA H100 Confidential Computing Trusted Execution Environments (TEEs) to provide sub-second Provisional Finality, underpinned by an optimistic fraud-proof mechanism and stochastic Zero-Knowledge spot-checks to mitigate hardware side-channel risks. We formally define Proof of Efficient Attribution (PoEA), a consensus mechanism that cryptographically binds execution traces to hardware attestations, thereby guaranteeing model authenticity. Extensive simulations demonstrate that OTR achieves 99% of the throughput of centralized baselines with a marginal cost overhead of $0.07 per query, maintaining Byzantine fault tolerance against rational adversaries even in the presence of transient hardware vulnerabilities.",
+    "url": "http://arxiv.org/abs/2512.20176v1",
+    "date": "2025-12-23T09:16:41+00:00",
+    "authors": [
+      "Aaron Chan",
+      "Alex Ding",
+      "Frank Chen",
+      "Alan Wu",
+      "Bruce Zhang",
+      "Arther Tian"
+    ]
+  },
+  {
+    "title": "LoLA: Long Horizon Latent Action Learning for General Robot Manipulation",
+    "summary": "The capability of performing long-horizon, language-guided robotic manipulation tasks critically relies on leveraging historical information and generating coherent action sequences. However, such capabilities are often overlooked by existing Vision-Language-Action (VLA) models. To solve this challenge, we propose LoLA (Long Horizon Latent Action Learning), a framework designed for robot manipulation that integrates long-term multi-view observations and robot proprioception to enable multi-step reasoning and action generation. We first employ Vision-Language Models to encode rich contextual features from historical sequences and multi-view observations. We further introduces a key module, State-Aware Latent Re-representation, which transforms visual inputs and language commands into actionable robot motion space. Unlike existing VLA approaches that merely concatenate robot proprioception (e.g., joint angles) with VL embeddings, this module leverages such robot states to explicitly ground VL representations in physical scale through a learnable \"embodiment-anchored\" latent space. We trained LoLA on diverse robotic pre-training datasets and conducted extensive evaluations on simulation benchmarks (SIMPLER and LIBERO), as well as two real-world tasks on Franka and Bi-Manual Aloha robots. Results show that LoLA significantly outperforms prior state-of-the-art methods (e.g., pi0), particularly in long-horizon manipulation tasks.",
+    "url": "http://arxiv.org/abs/2512.20166v1",
+    "date": "2025-12-23T08:45:24+00:00",
+    "authors": [
+      "Xiaofan Wang",
+      "Xingyu Gao",
+      "Jianlong Fu",
+      "Zuolei Li",
+      "Dean Fortier",
+      "Galen Mullins",
+      "Andrey Kolobov",
+      "Baining Guo"
+    ]
+  },
+  {
+    "title": "Titchmarsh theorems for H\u00f6lder-Lipschitz functions on fundamental domains of lattices in $\\mathbb{R}^{d}$ with applications to boundedness of Fourier multipliers",
+    "summary": "We extend the classical Titchmarsh theorems to the Fourier transform of two types of H\u00f6lder-Lipschitz functions - additive and multiplicative - defined on fundamental domains of lattices in $\\mathbb{R}^d$. Our approach is based on generalizations of Duren's lemma, which we first illustrate in the classical Euclidean setting. As an application of the second Titchmarsh theorem, we obtain boundedness results for Fourier multipliers between H\u00f6lder-Lipschitz spaces, from which we deduce Lipschitz-Sobolev regularity for Bessel potential operators on fundamental domains of lattices in the additive case. These results provide a natural generalization of classical one-dimensional theorems on the real line and on the torus to higher dimensions.",
+    "url": "http://arxiv.org/abs/2512.20158v1",
+    "date": "2025-12-23T08:39:19+00:00",
+    "authors": [
+      "Arne Hendrickx"
+    ]
+  },
+  {
+    "title": "QuarkAudio Technical Report",
+    "summary": "Many existing audio processing and generation models rely on task-specific architectures, resulting in fragmented development efforts and limited extensibility. It is therefore promising to design a unified framework capable of handling multiple tasks, while providing robust instruction and audio understanding and high-quality audio generation. This requires a compatible paradigm design, a powerful backbone, and a high-fidelity audio reconstruction module. To meet these requirements, this technical report introduces QuarkAudio, a decoder-only autoregressive (AR) LM-based generative framework that unifies multiple tasks. The framework includes a unified discrete audio tokenizer, H-Codec, which incorporates self-supervised learning (SSL) representations into the tokenization and reconstruction process. We further propose several improvements to H-Codec, such as a dynamic frame-rate mechanism and extending the audio sampling rate to 48 kHz. QuarkAudio unifies tasks by using task-specific conditional information as the conditioning sequence of the decoder-only LM, and predicting discrete target audio tokens in an AR manner. The framework supports a wide range of audio processing and generation tasks, including speech restoration (SR), target speaker extraction (TSE), speech separation (SS), voice conversion (VC), and language-queried audio source separation (LASS). In addition, we extend downstream tasks to universal free-form audio editing guided by natural language instructions (including speech semantic editing and audio event editing). Experimental results show that H-Codec achieves high-quality audio reconstruction with a low frame rate, improving both the efficiency and performance of downstream audio generation, and that QuarkAudio delivers competitive or comparable performance to state-of-the-art task-specific or multi-task systems across multiple tasks.",
+    "url": "http://arxiv.org/abs/2512.20151v1",
+    "date": "2025-12-23T08:27:23+00:00",
+    "authors": [
+      "Chengwei Liu",
+      "Haoyin Yan",
+      "Shaofei Xue",
+      "Xiaotao Liang",
+      "Xiaofu Chen",
+      "Bin Gong",
+      "Zheng Xue",
+      "Gang Song"
+    ]
+  },
+  {
+    "title": "Dreamcrafter: Immersive Editing of 3D Radiance Fields Through Flexible, Generative Inputs and Outputs",
+    "summary": "Authoring 3D scenes is a central task for spatial computing applications. Competing visions for lowering existing barriers are (1) focus on immersive, direct manipulation of 3D content or (2) leverage AI techniques that capture real scenes (3D Radiance Fields such as, NeRFs, 3D Gaussian Splatting) and modify them at a higher level of abstraction, at the cost of high latency. We unify the complementary strengths of these approaches and investigate how to integrate generative AI advances into real-time, immersive 3D Radiance Field editing. We introduce Dreamcrafter, a VR-based 3D scene editing system that: (1) provides a modular architecture to integrate generative AI algorithms; (2) combines different levels of control for creating objects, including natural language and direct manipulation; and (3) introduces proxy representations that support interaction during high-latency operations. We contribute empirical findings on control preferences and discuss how generative AI interfaces beyond text input enhance creativity in scene editing and world building.",
+    "url": "http://arxiv.org/abs/2512.20129v1",
+    "date": "2025-12-23T07:43:53+00:00",
+    "authors": [
+      "Cyrus Vachha",
+      "Yixiao Kang",
+      "Zach Dive",
+      "Ashwat Chidambaram",
+      "Anik Gupta",
+      "Eunice Jun",
+      "Bjoern Hartmann"
+    ]
+  },
+  {
+    "title": "Linking Thermal History to Shear Band Interaction and Macroscopic Ductility in Metallic Glasses",
+    "summary": "Shear band propagation and interaction are critical to the mechanical performance of metallic glasses and are strongly governed by thermal history, yet their microscopic mechanisms remain unclear. Here, using molecular dynamics simulations combined with a state-of-the-art annealing protocol, we systematically investigate these behaviors in a model metallic glass across effective quenching rates spanning six orders of magnitude. Through a double-notch model, we show that the normalized interaction distance relative to the single shear band width is significantly larger in slowly quenched samples than in rapidly quenched ones. Atomic-scale analysis reveals that rapidly quenched samples exhibit a high density of pre-existing soft regions, which trigger correlated shear transformation zones through local vortex fields, resulting in propagation path locking and weak inter-band coupling. In contrast, slowly quenched samples exhibit enhanced structural heterogeneity and a right-shifted activation energy spectrum, promoting a single large-scale vortex field ahead of the shear band front. This field facilitates long-range stress transmission and induces shear band deflection, convergence, and coalescence, a transition resembling a \"shielding effect\" in fracture mechanics, where vortex-mediated disturbances destabilize the advancing shear band front. Our findings establish a direct microscopic connection between glass stability and shear-band-mediated plasticity and suggest that regulating shear band interactions offers a promising route to enhance the room-temperature ductility of metallic glasses.",
+    "url": "http://arxiv.org/abs/2512.20121v1",
+    "date": "2025-12-23T07:24:03+00:00",
+    "authors": [
+      "Lechuan Sun",
+      "Shan Zhang",
+      "Bin Xu",
+      "Rui Su",
+      "Yunjiang Wang",
+      "Pengfei Guan"
+    ]
+  },
+  {
+    "title": "HEART-VIT: Hessian-Guided Efficient Dynamic Attention and Token Pruning in Vision Transformer",
+    "summary": "Vision Transformers (ViTs) deliver state-of-the-art accuracy but their quadratic attention cost and redundant computations severely hinder deployment on latency and resource-constrained platforms. Existing pruning approaches treat either tokens or heads in isolation, relying on heuristics or first-order signals, which often sacrifice accuracy or fail to generalize across inputs. We introduce HEART-ViT, a Hessian-guided efficient dynamic attention and token pruning framework for vision transformers, which to the best of our knowledge is the first unified, second-order, input-adaptive framework for ViT optimization. HEART-ViT estimates curvature-weighted sensitivities of both tokens and attention heads using efficient Hessian-vector products, enabling principled pruning decisions under explicit loss budgets.This dual-view sensitivity reveals an important structural insight: token pruning dominates computational savings, while head pruning provides fine-grained redundancy removal, and their combination achieves a superior trade-off. On ImageNet-100 and ImageNet-1K with ViT-B/16 and DeiT-B/16, HEART-ViT achieves up to 49.4 percent FLOPs reduction, 36 percent lower latency, and 46 percent higher throughput, while consistently matching or even surpassing baseline accuracy after fine-tuning, for example 4.7 percent recovery at 40 percent token pruning. Beyond theoretical benchmarks, we deploy HEART-ViT on different edge devices such as AGX Orin, demonstrating that our reductions in FLOPs and latency translate directly into real-world gains in inference speed and energy efficiency. HEART-ViT bridges the gap between theory and practice, delivering the first unified, curvature-driven pruning framework that is both accuracy-preserving and edge-efficient.",
+    "url": "http://arxiv.org/abs/2512.20120v1",
+    "date": "2025-12-23T07:23:16+00:00",
+    "authors": [
+      "Mohammad Helal Uddin",
+      "Liam Seymour",
+      "Sabur Baidya"
+    ]
+  },
+  {
+    "title": "Multi Modal Attention Networks with Uncertainty Quantification for Automated Concrete Bridge Deck Delamination Detection",
+    "summary": "Deteriorating civil infrastructure requires automated inspection techniques overcoming limitations of visual assessment. While Ground Penetrating Radar and Infrared Thermography enable subsurface defect detection, single modal approaches face complementary constraints radar struggles with moisture and shallow defects, while thermography exhibits weather dependency and limited depth. This paper presents a multi modal attention network fusing radar temporal patterns with thermal spatial signatures for bridge deck delamination detection. Our architecture introduces temporal attention for radar processing, spatial attention for thermal features, and cross modal fusion with learnable embeddings discovering complementary defect patterns invisible to individual sensors. We incorporate uncertainty quantification through Monte Carlo dropout and learned variance estimation, decomposing uncertainty into epistemic and aleatoric components for safety critical decisions. Experiments on five bridge datasets reveal that on balanced to moderately imbalanced data, our approach substantially outperforms baselines in accuracy and AUC representing meaningful improvements over single modal and concatenation based fusion. Ablation studies demonstrate cross modal attention provides critical gains beyond within modality attention, while multi head mechanisms achieve improved calibration. Uncertainty quantification reduces calibration error, enabling selective prediction by rejecting uncertain cases. However, under extreme class imbalance, attention mechanisms show vulnerability to majority class collapse. These findings provide actionable guidance: attention based architecture performs well across typical scenarios, while extreme imbalance requires specialized techniques. Our system maintains deployment efficiency, enabling real time inspection with characterized capabilities and limitations.",
+    "url": "http://arxiv.org/abs/2512.20113v1",
+    "date": "2025-12-23T07:16:18+00:00",
+    "authors": [
+      "Alireza Moayedikia",
+      "Sattar Dorafshan"
+    ]
+  },
+  {
+    "title": "Evolutionary Neural Architecture Search with Dual Contrastive Learning",
+    "summary": "Evolutionary Neural Architecture Search (ENAS) has gained attention for automatically designing neural network architectures. Recent studies use a neural predictor to guide the process, but the high computational costs of gathering training data -- since each label requires fully training an architecture -- make achieving a high-precision predictor with { limited compute budget (i.e., a capped number of fully trained architecture-label pairs)} crucial for ENAS success. This paper introduces ENAS with Dual Contrastive Learning (DCL-ENAS), a novel method that employs two stages of contrastive learning to train the neural predictor. In the first stage, contrastive self-supervised learning is used to learn meaningful representations from neural architectures without requiring labels. In the second stage, fine-tuning with contrastive learning is performed to accurately predict the relative performance of different architectures rather than their absolute performance, which is sufficient to guide the evolutionary search. Across NASBench-101 and NASBench-201, DCL-ENAS achieves the highest validation accuracy, surpassing the strongest published baselines by 0.05\\% (ImageNet16-120) to 0.39\\% (NASBench-101). On a real-world ECG arrhythmia classification task, DCL-ENAS improves performance by approximately 2.5 percentage points over a manually designed, non-NAS model obtained via random search, while requiring only 7.7 GPU-days.",
+    "url": "http://arxiv.org/abs/2512.20112v1",
+    "date": "2025-12-23T07:15:38+00:00",
+    "authors": [
+      "Xian-Rong Zhang",
+      "Yue-Jiao Gong",
+      "Wei-Neng Chen",
+      "Jun Zhang"
+    ]
+  },
+  {
+    "title": "UMAMI: Unifying Masked Autoregressive Models and Deterministic Rendering for View Synthesis",
+    "summary": "Novel view synthesis (NVS) seeks to render photorealistic, 3D-consistent images of a scene from unseen camera poses given only a sparse set of posed views. Existing deterministic networks render observed regions quickly but blur unobserved areas, whereas stochastic diffusion-based methods hallucinate plausible content yet incur heavy training- and inference-time costs. In this paper, we propose a hybrid framework that unifies the strengths of both paradigms. A bidirectional transformer encodes multi-view image tokens and Plucker-ray embeddings, producing a shared latent representation. Two lightweight heads then act on this representation: (i) a feed-forward regression head that renders pixels where geometry is well constrained, and (ii) a masked autoregressive diffusion head that completes occluded or unseen regions. The entire model is trained end-to-end with joint photometric and diffusion losses, without handcrafted 3D inductive biases, enabling scalability across diverse scenes. Experiments demonstrate that our method attains state-of-the-art image quality while reducing rendering time by an order of magnitude compared with fully generative baselines.",
+    "url": "http://arxiv.org/abs/2512.20107v1",
+    "date": "2025-12-23T07:08:00+00:00",
+    "authors": [
+      "Thanh-Tung Le",
+      "Tuan Pham",
+      "Tung Nguyen",
+      "Deying Kong",
+      "Xiaohui Xie",
+      "Stephan Mandt"
+    ]
+  },
+  {
+    "title": "LiDARDraft: Generating LiDAR Point Cloud from Versatile Inputs",
+    "summary": "Generating realistic and diverse LiDAR point clouds is crucial for autonomous driving simulation. Although previous methods achieve LiDAR point cloud generation from user inputs, they struggle to attain high-quality results while enabling versatile controllability, due to the imbalance between the complex distribution of LiDAR point clouds and the simple control signals. To address the limitation, we propose LiDARDraft, which utilizes the 3D layout to build a bridge between versatile conditional signals and LiDAR point clouds. The 3D layout can be trivially generated from various user inputs such as textual descriptions and images. Specifically, we represent text, images, and point clouds as unified 3D layouts, which are further transformed into semantic and depth control signals. Then, we employ a rangemap-based ControlNet to guide LiDAR point cloud generation. This pixel-level alignment approach demonstrates excellent performance in controllable LiDAR point clouds generation, enabling \"simulation from scratch\", allowing self-driving environments to be created from arbitrary textual descriptions, images and sketches.",
+    "url": "http://arxiv.org/abs/2512.20105v1",
+    "date": "2025-12-23T07:03:31+00:00",
+    "authors": [
+      "Haiyun Wei",
+      "Fan Lu",
+      "Yunwei Zhu",
+      "Zehan Zheng",
+      "Weiyi Xue",
+      "Lin Shao",
+      "Xudong Zhang",
+      "Ya Wu",
+      "Rong Fu",
+      "Guang Chen"
+    ]
+  },
+  {
+    "title": "Effect of Activation Function and Model Optimizer on the Performance of Human Activity Recognition System Using Various Deep Learning Models",
+    "summary": "Human Activity Recognition (HAR) plays a vital role in healthcare, surveillance, and innovative environments, where reliable action recognition supports timely decision-making and automation. Although deep learning-based HAR systems are widely adopted, the impact of Activation Functions (AFs) and Model Optimizers (MOs) on performance has not been sufficiently analyzed, particularly regarding how their combinations influence model behavior in practical scenarios. Most existing studies focus on architecture design, while the interaction between AF and MO choices remains relatively unexplored. In this work, we investigate the effect of three commonly used activation functions (ReLU, Sigmoid, and Tanh) combined with four optimization algorithms (SGD, Adam, RMSprop, and Adagrad) using two recurrent deep learning architectures, namely BiLSTM and ConvLSTM. Experiments are conducted on six medically relevant activity classes selected from the HMDB51 and UCF101 datasets, considering their suitability for healthcare-oriented HAR applications. Our experimental results show that ConvLSTM consistently outperforms BiLSTM across both datasets. ConvLSTM, combined with Adam or RMSprop, achieves an accuracy of up to 99.00%, demonstrating strong spatio-temporal learning capabilities and stable performance. While BiLSTM performs reasonably well on UCF101, with accuracy approaching 98.00%, its performance drops to approximately 60.00% on HMDB51, indicating limited robustness across datasets and weaker sensitivity to AF and MO variations. This study provides practical insights for optimizing HAR systems, particularly for real-world healthcare environments where fast and precise activity detection is critical.",
+    "url": "http://arxiv.org/abs/2512.20104v1",
+    "date": "2025-12-23T07:01:45+00:00",
+    "authors": [
+      "Subrata Kumer Paula",
+      "Dewan Nafiul Islam Noora",
+      "Rakhi Rani Paula",
+      "Md. Ekramul Hamidb",
+      "Fahmid Al Faridc",
+      "Hezerul Abdul Karimd",
+      "Md. Maruf Al Hossain Princee",
+      "Abu Saleh Musa Miahb"
+    ]
+  },
+  {
+    "title": "Developing an NTN Architecture for End-to-End Performance Evaluation",
+    "summary": "Non-Terrestrial Networks (NTN) are emerging as critical enablers of global connectivity, particularly in remote, unserved, underserved, or maritime regions lacking traditional infrastructure. While much of the existing work on NTN focuses on theoretical or simulated evaluations, practical implementations remain limited. In this paper, we present SpaceNET, a transparent NTN testbed that leverages the Starlink Low Earth Orbit (LEO) satellite constellation in conjunction with Mininet-based emulation to perform end-to-end performance assessments across real-world maritime and terrestrial endpoints that can also be applied to 5th generation (5G). Specifically, we establish a bidirectional link between a ground terminal located in Blacksburg, Virginia, and a maritime terminal aboard a cruise ship near Key West, Florida. We report detailed transmission control protocol (TCP) throughput, user datagram protocol (UDP) throughput, and latency measurements using two different user terminals - a) Smartphone, and b) very small aperture terminal (VSAT), emphasizing the transparent nature of the NTN payload, where the satellite acts solely as a relay node. Our results provide new insights into the performance limits and reliability of commercial LEO-based NTN applications. The SpaceNET testbed offers a reproducible and extensible platform for future research in NTN routing, mobility support, and cross-layer optimization.",
+    "url": "http://arxiv.org/abs/2512.20103v1",
+    "date": "2025-12-23T06:57:47+00:00",
+    "authors": [
+      "Md Mahfuzur Rahman",
+      "Nishith Tripathi",
+      "Jeffrey H. Reed",
+      "Lingjia Liu"
+    ]
+  },
+  {
+    "title": "A Novel Noise Analysis Method for Frequency Transfer System by Using ADEV Combine with EMD-WT",
+    "summary": "In precision frequency transfer systems, stringent requirements are imposed on the phase stability of transmitted signals. Throughout the transmission process, the inherent challenges of long-haul signal propagation inevitably introduce multiple noise components, including but not limited to thermal noise, phase fluctuations, and environmental interference. The system incline to use the conventional evaluation index - Allan deviation (ADEV) to reflect the system stability in order to evaluate the noise level. Whereas, ADEV can only provide numerical expression and lacks the time-frequency details. Therefore, a complete evaluation system is required by the system. In this paper, we present a groundbreaking integration of ADEV and wavelet transformed empirical mode decomposition (EMD-WT), establishing a novel analytical framework that enables simultaneous characterization of noise types and time-frequency domain properties. This synergistic approach achieves unprecedented dual-domain resolution in noise discrimination in frequency transfer systems.",
+    "url": "http://arxiv.org/abs/2512.20102v1",
+    "date": "2025-12-23T06:56:39+00:00",
+    "authors": [
+      "Xuan Yang. Junhui Li",
+      "Bin Luo",
+      "Ziyang Chen",
+      "Hong guo"
+    ]
+  },
+  {
+    "title": "Multi-state electromagnetic phase modulations in NiCo2O4 through cation disorder and hydrogenation",
+    "summary": "One focal challenge in engineering low-power and scalable all-oxide spintronic devices lies in exploring ferromagnetic oxide material with perpendicular magnetic anisotropy (PMA) and electronic conductivity while exhibiting tunable spin states. Targeting this need, spinel nickel cobaltite (NiCo2O4, NCO), featured by room-temperature ferrimagnetically metallic ground state with strong PMA, emerges as a promising candidate in the field of oxide spintronics. The cation distribution disorder inherent to NCO renders competing electromagnetic states and abnormal sign reversal of anomalous Hall effect (AHE), introducing an additional freedom to adjust electromagnetic transports. Here, we unveil multi-state electromagnetic phase modulations in NCO system through controllable cation disorder and proton evolution, extensively expanding electromagnetic phase diagram. The cation disorder in NCO tunable by growth temperature is identified as a critical control parameter for kinetically adjusting the proton evolution, giving rise to intermediate hydrogenated states with chemical stability. Hydrogen incorporation reversibly drives structural transformation and electromagnetic state evolutions in NCO, with rich spin-dependent correlated physics uncovered by combining the AHE scaling relation and synchrotron-based spectroscopy. Our work not only establishes NCO as a versatile platform for discovering spin-dependent physical functionality but also extends the horizons in materials design for state-of-the-art spintronic devices harnessing magneto-ionic control and inherent cation disorder.",
+    "url": "http://arxiv.org/abs/2512.20099v1",
+    "date": "2025-12-23T06:51:18+00:00",
+    "authors": [
+      "Xuanchi Zhou",
+      "Xiaohui Yao",
+      "Shuang Li",
+      "Xiaomei Qiao",
+      "Jiahui Ji",
+      "Guowei Zhou",
+      "Huihui Ji",
+      "Xiaohong Xu"
+    ]
+  },
+  {
+    "title": "A Novel Graph-Sequence Learning Model for Inductive Text Classification",
+    "summary": "Text classification plays an important role in various downstream text-related tasks, such as sentiment analysis, fake news detection, and public opinion analysis. Recently, text classification based on Graph Neural Networks (GNNs) has made significant progress due to their strong capabilities of structural relationship learning. However, these approaches still face two major limitations. First, these approaches fail to fully consider the diverse structural information across word pairs, e.g., co-occurrence, syntax, and semantics. Furthermore, they neglect sequence information in the text graph structure information learning module and can not classify texts with new words and relations. In this paper, we propose a Novel Graph-Sequence Learning Model for Inductive Text Classification (TextGSL) to address the previously mentioned issues. More specifically, we construct a single text-level graph for all words in each text and establish different edge types based on the diverse relationships between word pairs. Building upon this, we design an adaptive multi-edge message-passing paradigm to aggregate diverse structural information between word pairs. Additionally, sequential information among text data can be captured by the proposed TextGSL through the incorporation of Transformer layers. Therefore, TextGSL can learn more discriminative text representations. TextGSL has been comprehensively compared with several strong baselines. The experimental results on diverse benchmarking datasets demonstrate that TextGSL outperforms these baselines in terms of accuracy.",
+    "url": "http://arxiv.org/abs/2512.20097v1",
+    "date": "2025-12-23T06:49:33+00:00",
+    "authors": [
+      "Zuo Wang",
+      "Ye Yuan"
+    ]
+  },
+  {
+    "title": "Neural Compression of 360-Degree Equirectangular Videos using Quality Parameter Adaptation",
+    "summary": "This study proposes a practical approach for compressing 360-degree equirectangular videos using pretrained neural video compression (NVC) models. Without requiring additional training or changes in the model architectures, the proposed method extends quantization parameter adaptation techniques from traditional video codecs to NVC, utilizing the spatially varying sampling density in equirectangular projections. We introduce latitude-based adaptive quality parameters through rate-distortion optimization for NVC. The proposed method utilizes vector bank interpolation for latent modulation, enabling flexible adaptation with arbitrary quality parameters and mitigating the limitations caused by rounding errors in the adaptive quantization parameters. Experimental results demonstrate that applying this method to the DCVC-RT framework yields BD-Rate savings of 5.2% in terms of the weighted spherical peak signal-to-noise ratio for JVET class S1 test sequences, with only a 0.3% increase in processing time.",
+    "url": "http://arxiv.org/abs/2512.20093v1",
+    "date": "2025-12-23T06:41:07+00:00",
+    "authors": [
+      "Daichi Arai",
+      "Yuichi Kondo",
+      "Kyohei Unno",
+      "Yasuko Sugito",
+      "Yuichi Kusakabe"
+    ]
+  },
+  {
+    "title": "High efficiency and compact lithium niobate non-resonant recirculating phase modulator and its applications",
+    "summary": "High modulation efficiency and a compact footprint are critical for next-generation electro-optic (EO) modulators. We introduce a new class of non-resonant recirculating phase modulators (PMs) that boosts modulation efficiency by repeatedly modulating the optical field within a single, non-resonant waveguide, while fundamentally removing the loop-length matching constraint that has limited prior recirculating schemes. This architectural breakthrough simultaneously enables a much smaller device footprint and an extended low-V$\u03c0$ bandwidth, without relying on narrowband resonances. Building on this concept, we experimentally demonstrate both a Mach-Zehnder modulator (MZM) and a cascaded PM, and verify their versatility in finite impulse response (FIR) filtering and optical frequency comb (OFC) generation. The recirculating MZM operates as a 4-tap rectangular-window FIR filter with 110 GHz bandwidth in a compact 2.889$\\times$0.58 mm$^2$ footprint. The cascaded PM achieves a 3.40 GHz low-V$\u03c0$ bandwidth, a 110 GHz resonant EO bandwidth, and a V$\u03c0$L of 0.7 V$\\cdot$cm, and generates 20 OFC lines under a 33 dBm microwave drive. These results demonstrate, for the first time, a practical and highly efficient non-resonant recirculating modulation platform, laying the groundwork for scalable high-order mode recirculating modulators (RMs) and opening new opportunities in optical communications, sensing, and microwave photonics.",
+    "url": "http://arxiv.org/abs/2512.20090v1",
+    "date": "2025-12-23T06:33:39+00:00",
+    "authors": [
+      "Feiyu Wang",
+      "Liheng Wang",
+      "Mingrui Yuan",
+      "Zhen Han",
+      "Binjie Wang",
+      "Yong Zheng",
+      "Pu Zhang",
+      "Yongheng Jiang",
+      "Huifu Xiao",
+      "Mei Xian Low",
+      "Aditya Dubey",
+      "Thach Giang Nguyen",
+      "Guanghui Ren",
+      "Arnan Mitchell",
+      "Yonghui Tian"
+    ]
+  },
+  {
+    "title": "Item Region-based Style Classification Network (IRSN): A Fashion Style Classifier Based on Domain Knowledge of Fashion Experts",
+    "summary": "Fashion style classification is a challenging task because of the large visual variation within the same style and the existence of visually similar styles.\n  Styles are expressed not only by the global appearance, but also by the attributes of individual items and their combinations.\n  In this study, we propose an item region-based fashion style classification network (IRSN) to effectively classify fashion styles by analyzing item-specific features and their combinations in addition to global features.\n  IRSN extracts features of each item region using item region pooling (IRP), analyzes them separately, and combines them using gated feature fusion (GFF).\n  In addition, we improve the feature extractor by applying a dual-backbone architecture that combines a domain-specific feature extractor and a general feature extractor pre-trained with a large-scale image-text dataset.\n  In experiments, applying IRSN to six widely-used backbones, including EfficientNet, ConvNeXt, and Swin Transformer, improved style classification accuracy by an average of 6.9% and a maximum of 14.5% on the FashionStyle14 dataset and by an average of 7.6% and a maximum of 15.1% on the ShowniqV3 dataset. Visualization analysis also supports that the IRSN models are better than the baseline models at capturing differences between similar style classes.",
+    "url": "http://arxiv.org/abs/2512.20088v1",
+    "date": "2025-12-23T06:30:33+00:00",
+    "authors": [
+      "Jinyoung Choi",
+      "Youngchae Kwon",
+      "Injung Kim"
+    ]
+  },
+  {
+    "title": "QE-Catalytic: A Graph-Language Multimodal Base Model for Relaxed-Energy Prediction in Catalytic Adsorption",
+    "summary": "Adsorption energy is a key descriptor of catalytic reactivity. It is fundamentally defined as the difference between the relaxed total energy of the adsorbate-surface system and that of an appropriate reference state; therefore, the accuracy of relaxed-energy prediction directly determines the reliability of machine-learning-driven catalyst screening. E(3)-equivariant graph neural networks (GNNs) can natively operate on three-dimensional atomic coordinates under periodic boundary conditions and have demonstrated strong performance on such tasks. In contrast, language-model-based approaches, while enabling human-readable textual descriptions and reducing reliance on explicit graph -- thereby broadening applicability -- remain insufficient in both adsorption-configuration energy prediction accuracy and in distinguishing ``the same system with different configurations,'' even with graph-assisted pretraining in the style of GAP-CATBERTa.\n  To this end, we propose QE-Catalytic, a multimodal framework that deeply couples a large language model (\\textbf{Q}wen) with an E(3)-equivariant graph Transformer (\\textbf{E}quiformer-V2), enabling unified support for adsorption-configuration property prediction and inverse design on complex catalytic surfaces. During prediction, QE-Catalytic jointly leverages three-dimensional structures and structured configuration text, and injects ``3D geometric information'' into the language channel via graph-text alignment, allowing it to function as a high-performance text-based predictor when precise coordinates are unavailable, while also autoregressively generating CIF files for target-energy-driven structure design and information completion. On OC20, QE-Catalytic reduces the MAE of relaxed adsorption energy from 0.713~eV to 0.486~eV, and consistently outperforms baseline models such as CatBERTa and GAP-CATBERTa across multiple evaluation protocols.",
+    "url": "http://arxiv.org/abs/2512.20084v1",
+    "date": "2025-12-23T06:27:30+00:00",
+    "authors": [
+      "Yanjie Li",
+      "Jian Xu",
+      "Xueqing Chen",
+      "Lina Yu",
+      "Shiming Xiang",
+      "Weijun Li",
+      "Cheng-lin Liu"
+    ]
+  },
+  {
+    "title": "Detecting Non-Optimal Decisions of Embodied Agents via Diversity-Guided Metamorphic Testing",
+    "summary": "As embodied agents advance toward real-world deployment, ensuring optimal decisions becomes critical for resource-constrained applications. Current evaluation methods focus primarily on functional correctness, overlooking the non-functional optimality of generated plans. This gap can lead to significant performance degradation and resource waste. We identify and formalize the problem of Non-optimal Decisions (NoDs), where agents complete tasks successfully but inefficiently. We present NoD-DGMT, a systematic framework for detecting NoDs in embodied agent task planning via diversity-guided metamorphic testing. Our key insight is that optimal planners should exhibit invariant behavioral properties under specific transformations. We design four novel metamorphic relations capturing fundamental optimality properties: position detour suboptimality, action optimality completeness, condition refinement monotonicity, and scene perturbation invariance. To maximize detection efficiency, we introduce a diversity-guided selection strategy that actively selects test cases exploring different violation categories, avoiding redundant evaluations while ensuring comprehensive diversity coverage. Extensive experiments on the AI2-THOR simulator with four state-of-the-art planning models demonstrate that NoD-DGMT achieves violation detection rates of 31.9% on average, with our diversity-guided filter improving rates by 4.3% and diversity scores by 3.3 on average. NoD-DGMT significantly outperforms six baseline methods, with 16.8% relative improvement over the best baseline, and demonstrates consistent superiority across different model architectures and task complexities.",
+    "url": "http://arxiv.org/abs/2512.20083v1",
+    "date": "2025-12-23T06:27:18+00:00",
+    "authors": [
+      "Wenzhao Wu",
+      "Yahui Tang",
+      "Mingfei Cheng",
+      "Wenbing Tang",
+      "Yuan Zhou",
+      "Yang Liu"
+    ]
+  },
+  {
+    "title": "CBA: Communication-Bound-Aware Cross-Domain Resource Assignment for Pipeline-Parallel Distributed LLM Training in Dynamic Multi-DC Optical Networks",
+    "summary": "We propose a communication-bound-aware cross-domain resource assignment framework for pipeline-parallel distributed training over multi-datacenter optical networks, which lowers iteration time by 31.25% and reduces 13.20% blocking requests compared to baselines.",
+    "url": "http://arxiv.org/abs/2512.20080v1",
+    "date": "2025-12-23T06:26:20+00:00",
+    "authors": [
+      "Dianxuan Fu",
+      "Xiaomin Liu",
+      "Yihao Zhang",
+      "Shikui Shen",
+      "Weisheng Hu",
+      "Qunbi Zhuge"
+    ]
+  },
+  {
+    "title": "3D Stack In-Sensor-Computing (3DS-ISC): Accelerating Time-Surface Construction for Neuromorphic Event Cameras",
+    "summary": "This work proposes a 3D Stack In-Sensor-Computing (3DS-ISC) architecture for efficient event-based vision processing. A real-time normalization method using an exponential decay function is introduced to construct the time-surface, reducing hardware usage while preserving temporal information. The circuit design utilizes the leakage characterization of Dynamic Random Access Memory(DRAM) for timestamp normalization. Custom interdigitated metal-oxide-metal capacitor (MOMCAP) is used to store the charge and low leakage switch (LL switch) is used to extend the effective charge storage time. The 3DS-ISC architecture integrates sensing, memory, and computation to overcome the memory wall problem, reducing power, latency, and reducing area by 69x, 2.2x and 1.9x, respectively, compared with its 2D counterpart. Moreover, compared to works using a 16-bit SRAM to store timestamps, the ISC analog array can reduce power consumption by three orders of magnitude. In real computer vision (CV) tasks, we applied the spatial-temporal correlation filter (STCF) for denoise, and 3D-ISC achieved almost equivalent accuracy compared to the digital implementation using high precision timestamps. As for the image classification, time-surface constructed by 3D-ISC is used as the input of GoogleNet, achieving 99% on N-MNIST, 85% on N-Caltech101, 78% on CIFAR10-DVS, and 97% on DVS128 Gesture, comparable with state-of-the-art results on each dataset. Additionally, the 3D-ISC method is also applied to image reconstruction using the DAVIS240C dataset, achieving the highest average SSIM (0.62) among three methods. This work establishes a foundation for real-time, resource-efficient event-based processing and points to future integration of advanced computational circuits for broader applications.",
+    "url": "http://arxiv.org/abs/2512.20073v1",
+    "date": "2025-12-23T05:55:55+00:00",
+    "authors": [
+      "Hongyang Shang",
+      "Shuai Dong",
+      "Ye Ke",
+      "Arindam Basu"
+    ]
+  },
+  {
+    "title": "Robust and Secure Transmission for Movable-RIS Assisted ISAC with Imperfect Sense Estimation",
+    "summary": "Reconfigurable intelligent surfaces (RISs) have been extensively applied in integrated sensing and communication (ISAC) systems due to the capability of enhancing physical layer security (PLS). However, conventional static RIS architectures lack the flexibility required for adaptive beam control in multi-user and multifunctional scenarios. To address this issue without introducing additional hardware complexity and power consumption, in this paper, we exploit a movable RIS (MRIS) architecture, which consists of a large fixed sub-surface and a smaller movable sub-surface that slides on the fixed sub-surface to achieve dynamic beam reconfiguration with static phase shifts. This paper investigates an MRIS-assisted ISAC system under imperfect sensing estimation, where dedicated radar signals serve as artificial noise to enhance secure transmission against potential eavesdroppers (Eves). The transmit beamforming vectors, MRIS phase shifts, and relative positions of the two sub-surfaces are jointly optimized to maximize the minimum secrecy rate, ensuring robust secrecy performance for the weakest user under the uncertainty of the Eves' channels. To handle the non-convexity, a convex bound is derived for the Eve channel uncertainty, and the S-procedure is employed to reformulate semi-infinite constraints as linear matrix inequalities. An efficient alternating optimization and penalty dual decomposition-based algorithm is developed. Simulation results demonstrate that the proposed MRIS architecture substantially improves secrecy performance, especially when only a small number of elements are allocated to the movable sub-surface.",
+    "url": "http://arxiv.org/abs/2512.20071v1",
+    "date": "2025-12-23T05:46:44+00:00",
+    "authors": [
+      "Ling Zhuang",
+      "Ximing Xie",
+      "Fang Fang",
+      "Ali Attaran",
+      "Zhizhong Zhang"
+    ]
+  },
+  {
+    "title": "One-level density of zeros of $\u0393_1(q)$ $L$-functions",
+    "summary": "We study the one-level density of zeros for a family of $\u0393_1(q)$ $L$-functions. Assuming GRH, we are able to extend the support of the Fourier transform of the test function to $\\left(-\\frac{8}{3},\\frac{8}{3}\\right)$ and verify the Katz-Sarnak prediction for our unitary family. As an application, we obtain that the proportion of forms in the family with non-vanishing at the central point is at least $62.5\\%$, assuming GRH. This is the highest non-vanishing proportion for any family associated with a unitary group. Moreover, this result indicates that the structural properties of $L$-functions play a more important role in extending the support than the associated symmetry group.",
+    "url": "http://arxiv.org/abs/2512.20066v1",
+    "date": "2025-12-23T05:35:39+00:00",
+    "authors": [
+      "Arijit Paul"
+    ]
+  },
+  {
+    "title": "Scaling Reinforcement Learning for Content Moderation with Large Language Models",
+    "summary": "Content moderation at scale remains one of the most pressing challenges in today's digital ecosystem, where billions of user- and AI-generated artifacts must be continuously evaluated for policy violations. Although recent advances in large language models (LLMs) have demonstrated strong potential for policy-grounded moderation, the practical challenges of training these systems to achieve expert-level accuracy in real-world settings remain largely unexplored, particularly in regimes characterized by label sparsity, evolving policy definitions, and the need for nuanced reasoning beyond shallow pattern matching. In this work, we present a comprehensive empirical investigation of scaling reinforcement learning (RL) for content classification, systematically evaluating multiple RL training recipes and reward-shaping strategies-including verifiable rewards and LLM-as-judge frameworks-to transform general-purpose language models into specialized, policy-aligned classifiers across three real-world content moderation tasks. Our findings provide actionable insights for industrial-scale moderation systems, demonstrating that RL exhibits sigmoid-like scaling behavior in which performance improves smoothly with increased training data, rollouts, and optimization steps before gradually saturating. Moreover, we show that RL substantially improves performance on tasks requiring complex policy-grounded reasoning while achieving up to 100x higher data efficiency than supervised fine-tuning, making it particularly effective in domains where expert annotations are scarce or costly.",
+    "url": "http://arxiv.org/abs/2512.20061v1",
+    "date": "2025-12-23T05:27:16+00:00",
+    "authors": [
+      "Hamed Firooz",
+      "Rui Liu",
+      "Yuchen Lu",
+      "Zhenyu Hou",
+      "Fangzhou Xiong",
+      "Xiaoyang Zhang",
+      "Changshu Jian",
+      "Zhicheng Zhu",
+      "Jiayuan Ma",
+      "Jacob Tao",
+      "Chaitali Gupta",
+      "Xiaochang Peng",
+      "Shike Mei",
+      "Hang Cui",
+      "Yang Qin",
+      "Shuo Tang",
+      "Jason Gaedtke",
+      "Arpit Mittal"
+    ]
+  },
+  {
+    "title": "Deep Eigenspace Network and Its Application to Parametric Non-selfadjoint Eigenvalue Problems",
+    "summary": "We consider operator learning for efficiently solving parametric non-selfadjoint eigenvalue problems. To overcome the spectral instability and mode switching inherent in non-selfadjoint operators, we introduce a hybrid framework that learns the stable invariant eigensubspace mapping rather than individual eigenfunctions. We proposed a Deep Eigenspace Network (DEN) architecture integrating Fourier Neural Operators, geometry-adaptive POD bases, and explicit banded cross-mode mixing mechanisms to capture complex spectral dependencies on unstructured meshes. We apply DEN to the parametric non-selfadjoint Steklov eigenvalue problem and provide theoretical proofs for the Lipschitz continuity of the eigensubspace with respect to the parameters. In addition, we derive error bounds for the reconstruction of the eigenspace. Numerical experiments validate DEN's high accuracy and zero-shot generalization capabilities across different discretizations.",
+    "url": "http://arxiv.org/abs/2512.20058v1",
+    "date": "2025-12-23T05:20:22+00:00",
+    "authors": [
+      "H. Li",
+      "J. Sun",
+      "Z. Zhang"
+    ]
+  },
+  {
+    "title": "VSA:Visual-Structural Alignment for UI-to-Code",
+    "summary": "The automation of user interface development has the potential to accelerate software delivery by mitigating intensive manual implementation. Despite the advancements in Large Multimodal Models for design-to-code translation, existing methodologies predominantly yield unstructured, flat codebases that lack compatibility with component-oriented libraries such as React or Angular. Such outputs typically exhibit low cohesion and high coupling, complicating long-term maintenance. In this paper, we propose \\textbf{VSA (VSA)}, a multi-stage paradigm designed to synthesize organized frontend assets through visual-structural alignment. Our approach first employs a spatial-aware transformer to reconstruct the visual input into a hierarchical tree representation. Moving beyond basic layout extraction, we integrate an algorithmic pattern-matching layer to identify recurring UI motifs and encapsulate them into modular templates. These templates are then processed via a schema-driven synthesis engine, ensuring the Large Language Model generates type-safe, prop-drilled components suitable for production environments. Experimental results indicate that our framework yields a substantial improvement in code modularity and architectural consistency over state-of-the-art benchmarks, effectively bridging the gap between raw pixels and scalable software engineering.",
+    "url": "http://arxiv.org/abs/2512.20034v1",
+    "date": "2025-12-23T03:55:45+00:00",
+    "authors": [
+      "Xian Wu",
+      "Ming Zhang",
+      "Zhiyu Fang",
+      "Fei Li",
+      "Bin Wang",
+      "Yong Jiang",
+      "Hao Zhou"
+    ]
+  },
+  {
+    "title": "FlashLips: 100-FPS Mask-Free Latent Lip-Sync using Reconstruction Instead of Diffusion or GANs",
+    "summary": "We present FlashLips, a two-stage, mask-free lip-sync system that decouples lips control from rendering and achieves real-time performance running at over 100 FPS on a single GPU, while matching the visual quality of larger state-of-the-art models. Stage 1 is a compact, one-step latent-space editor that reconstructs an image using a reference identity, a masked target frame, and a low-dimensional lips-pose vector, trained purely with reconstruction losses - no GANs or diffusion. To remove explicit masks at inference, we use self-supervision: we generate mouth-altered variants of the target image, that serve as pseudo ground truth for fine-tuning, teaching the network to localize edits to the lips while preserving the rest. Stage 2 is an audio-to-pose transformer trained with a flow-matching objective to predict lips-poses vectors from speech. Together, these stages form a simple and stable pipeline that combines deterministic reconstruction with robust audio control, delivering high perceptual quality and faster-than-real-time speed.",
+    "url": "http://arxiv.org/abs/2512.20033v1",
+    "date": "2025-12-23T03:54:48+00:00",
+    "authors": [
+      "Andreas Zinonos",
+      "Micha\u0142 Stypu\u0142kowski",
+      "Antoni Bigata",
+      "Stavros Petridis",
+      "Maja Pantic",
+      "Nikita Drobyshev"
+    ]
+  }
+]

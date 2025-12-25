@@ -1,0 +1,17 @@
+# Core Scientific Stack
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+
+# Intelligence & Embeddings
+sentence-transformers>=2.2.0
+transformers>=4.30.0
+einops # Required for Nomic v1.5 trust_remote_code
+
+# Vector Database & Data Sourcing
+lancedb>=0.2.0
+arxiv>=2.0.0
+
+# UI & Formatting
+rich>=13.0.0
