@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mahalanbois"
+version = "7.6.0"
+authors = [
+  { name="yaditiva", email="yaditiva@gmail.com" },
+]
+description = "Deterministic Topological Novelty Detection for Scientific Research."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "scikit-learn>=1.2.0",
+    "sentence-transformers>=2.2.0",
+    "transformers>=4.30.0",
+    "einops",
+    "lancedb>=0.2.0",
+    "arxiv>=2.0.0",
+    "rich>=13.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ENUMERA8OR/Mahalanbois"
+"Bug Tracker" = "https://github.com/ENUMERA8OR/Mahalanbois/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mahalanbois*"]
