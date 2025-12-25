@@ -17,14 +17,43 @@ The project addresses the "Semantic Signal" problem in research: how to identify
 
 Mahalanbois 7.6V implements a multi-stage ensemble of community-validated OOD metrics, optimized for high-dimensional embedding spaces:
 
-1.  **Mahalanobis++ (Geometric Analysis):** Utilizes L2-normalized feature spaces and Ledoit-Wolf covariance estimation. This ensures robust distance measurements in high-dimensional manifolds where standard Euclidean metrics often fail.
-2.  **MA-DPR (Graph Connectivity):** A manifold-aware distance metric that evaluates graph-based connectivity. It identifies "information islands" by calculating the mean shortest-path distance between query points and the historical reference set.
-3.  **SupLID (Topological Violation):** Measures **Local Intrinsic Dimensionality (LID)**. By analyzing the expansion rate of neighborhood densities, it detects samples that violate the topological constraints of the established research distribution.
-4.  **Structural NovAScore (Information Gain):** A deterministic alternative to LLM-based fact extraction. It calculates sentence-level information gain by identifying "Peak Novelty" claims that exhibit the highest semantic distance from historical baselines.
+1.  **Mahalanobis++ (Geometric Analysis):** Utilizes L2-normalized feature spaces and Ledoit-Wolf covariance estimation. 
+    *   *Citation:* Mueller & Hein, "Mahalanobis++: Improving OOD Detection via Feature Normalization", [arXiv:2505.18032](https://arxiv.org/abs/2505.18032) (2025).
+2.  **MA-DPR (Graph Connectivity):** A manifold-aware distance metric that evaluates graph-based connectivity to identify "information islands."
+    *   *Citation:* Liu et al., "MA-DPR: Manifold-aware Distance Metrics for Dense Passage Retrieval", [arXiv:2509.13562](https://arxiv.org/abs/2509.13562) (2025).
+3.  **SupLID (Topological Violation):** Measures **Local Intrinsic Dimensionality (LID)** to detect topological constraints violations.
+    *   *Citation:* "SupLID: Geometrical Guidance for Out-of-Distribution Detection in Semantic Segmentation", [arXiv:2511.12781](https://arxiv.org/abs/2511.12781) (2025).
+4.  **Structural NovAScore (Information Gain):** A deterministic alternative to LLM-based fact extraction focusing on sentence-level novelty.
+    *   *Citation:* Ai et al., "NovAScore: A New Automated Metric for Evaluating Document Level Novelty", [arXiv:2409.09033](https://arxiv.org/abs/2409.09033) (2024).
 
 ---
 
-## 🏗️ Architectural Evolution
+## 🔄 Execution Flow: Input to Output
+
+Mahalanbois 7.6V operates as a sequential pipeline designed for maximum precision and minimal latency:
+
+1.  **Ingestion & Vectorization (Input):**
+    *   The script takes a search query (e.g., via ArXiv API) and fetches the latest document abstracts.
+    *   Each document is passed through the **Nomic-Embed-Text-v1.5** model to generate a high-dimensional vector representation.
+
+2.  **Baseline Benchmarking:**
+    *   Historical data is retrieved from **LanceDB**.
+    *   The script fits the **Geometric (Mahalanobis++)**, **Graph (MA-DPR)**, and **Manifold (SupLID)** filters against the historical distribution to establish a "normative" manifold.
+
+3.  **Topological Screening:**
+    *   Query vectors are scored against the baseline filters. This identifies global anomalies (Far-OOD) and manifold-rule violations (Near-OOD).
+
+4.  **Granular Semantic Analysis:**
+    *   Top candidates from the screening phase are decomposed into individual sentences.
+    *   Each sentence is vectorized and scored for **Structural NovAScore (Information Gain)** against the history to pinpoint the exact claim that represents a "Peak Novelty" event.
+
+5.  **Hybrid Synthesis & Reporting (Output):**
+    *   All scores are normalized and fused into a final **Hybrid Novelty Score**.
+    *   The **Rich CLI** generates a high-density report ranking the papers, allowing the user to "See Sooner" and identify groundbreaking research instantly.
+
+---
+
+## 💎 The Mathematical Framework of Mahalanbois 7.6V
 
 The project evolved from a generative-heavy approach to a pure topological framework:
 
