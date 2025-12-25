@@ -22,9 +22,9 @@ Mahalanbois 7.6V implements a multi-stage ensemble of community-validated OOD me
 2.  **MA-DPR (Graph Connectivity):** A manifold-aware distance metric that evaluates graph-based connectivity to identify "information islands."
     *   *Citation:* Liu et al., "MA-DPR: Manifold-aware Distance Metrics for Dense Passage Retrieval", [arXiv:2509.13562](https://arxiv.org/abs/2509.13562) (2025).
 3.  **SupLID (Topological Violation):** Measures **Local Intrinsic Dimensionality (LID)** to detect topological constraints violations.
-    *   *Citation:* "SupLID: Geometrical Guidance for Out-of-Distribution Detection in Semantic Segmentation", [arXiv:2511.12781](https://arxiv.org/abs/2511.12781) (2025).
+    *   *Citation:* "SupLID: Geometrical Guidance for Out-of-Distribution Detection in Semantic Segmentation", [arXiv:2511.18816](https://arxiv.org/abs/2511.18816) (2025).
 4.  **Structural NovAScore (Information Gain):** A deterministic alternative to LLM-based fact extraction focusing on sentence-level novelty.
-    *   *Citation:* Ai et al., "NovAScore: A New Automated Metric for Evaluating Document Level Novelty", [arXiv:2409.09033](https://arxiv.org/abs/2409.09033) (2024).
+    *   *Citation:* Ai et al., "NovAScore: A New Automated Metric for Evaluating Document Level Novelty", [arXiv:2409.09249](https://arxiv.org/abs/2409.09249) (2024).
 
 ---
 
