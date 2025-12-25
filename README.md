@@ -57,6 +57,32 @@ python mahalanbois7.6V.py --query "category-agnostic novelty detection"
 
 ---
 
+## 💎 The Mathematical Framework of Mahalanbois 7.6V
+
+Mahalanbois 7.6V treats research not as text, but as a **Topological Manifold**—a curved surface of human knowledge in high-dimensional space. The pipeline identifies novelty by measuring how a new data point "warps" this surface through four distinct lenses:
+
+### 1. Geometric Analysis: Mahalanobis++
+Standard Euclidean distance is isotropic; it fails to account for the "shape" of data distributions.
+*   **Intuition:** Mahalanobis++ scales the feature space based on the density and covariance of existing knowledge.
+*   **The Math:** By applying **L2 Normalization**, we project research onto a unit hypersphere, focusing purely on semantic direction. We utilize **Ledoit-Wolf Shrinkage** for high-dimensional stability, ensuring the precision matrix remains well-conditioned even with limited historical samples.
+
+### 2. Connectivity Analysis: MA-DPR
+Proximity in latent space does not always imply intellectual continuity.
+*   **Intuition:** Imagine a knowledge graph where papers are connected by conceptual "roads."
+*   **The Math:** MA-DPR calculates the **Shortest Path** from a new entry to the historical "mainland." If a paper is physically close but lacks a high-probability path through the manifold, it is flagged as an **Information Island**—a disconnected conceptual leap.
+
+### 3. Topological Violation: SupLID
+Every research domain possesses a characteristic **Intrinsic Dimensionality**.
+*   **Intuition:** A point that forces a 2D plane to behave like a 3D volume is a structural anomaly.
+*   **The Math:** **Local Intrinsic Dimensionality (LID)** evaluates the expansion rate of neighborhood densities. A novel paper often exhibits a dimensionality spike, indicating it sits in a region of the manifold that violates the established topological constraints.
+
+### 4. Semantic Information Gain: Structural NovAScore
+Global averaging often dilutes the signal of groundbreaking innovation.
+*   **Intuition:** A novel paper often contains 90% established context and one or two radical, unprecedented claims.
+*   **The Math:** We decompose abstracts into constituent sentence vectors and analyze the **Peak Novelty** (90th percentile distance). This identifies the specific "information spark" hidden within standard academic prose, rather than averaging out the innovation.
+
+---
+
 ## 🚀 Future Directions: The OOD-38 Diagnostic Suite
 
 The next evolution of Mahalanbois involves transitioning from a novelty filter to a comprehensive **OOD Diagnostic Suite**.
